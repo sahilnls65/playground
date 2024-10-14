@@ -1,0 +1,95 @@
+[
+  {
+    "schema_name": "common_token",
+    "schema": {
+      "type": false,
+      "token": false,
+      "expires": false,
+      "blacklisted": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "role": ""
+  },
+  {
+    "schema_name": "log",
+    "schema": {
+      "description": false,
+      "message": false,
+      "request": {},
+      "server": {},
+      "time": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "module",
+    "schema": {
+      "icon": false,
+      "name": false,
+      "code": false,
+      "route": false,
+      "active_on": {
+        "default": false
+      },
+      "parent_id": false,
+      "is_for_admin": false,
+      "sort_order": false,
+      "is_default": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "permission",
+    "schema": {
+      "role": false,
+      "module": false,
+      "can_read": false,
+      "can_select": false,
+      "can_add": false,
+      "can_update": false,
+      "can_delete": false,
+      "can_upload": false,
+      "can_download": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "personal_access_token",
+    "schema": {
+      "name": false,
+      "token": false,
+      "expires": false,
+      "blacklisted": false,
+      "role": false,
+      "generated_by": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "tokens",
+    "schema": {
+      "auth0Id": false,
+      "userId": false,
+      "auth0": {
+        "token": false,
+        "expires": false,
+        "blacklisted": false
+      },
+      "local": {
+        "token": false,
+        "expires": false,
+        "blacklisted": false
+      },
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  }
+]

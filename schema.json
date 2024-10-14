@@ -1,0 +1,977 @@
+[
+  {
+    "schema_name": "action_widget",
+    "schema": {
+      "role": false,
+      "tekst": false,
+      "titel": false,
+      "ctaurl": false,
+      "zichtbaartotdatum": false,
+      "zichtbaarvanafdatum": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "role": ""
+  },
+  {
+    "schema_name": "das_group",
+    "schema": {
+      "dasplatform": false,
+      "naam": false,
+      "order": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "das_platform",
+    "schema": {
+      "naam": false,
+      "order": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "user_documenten",
+    "schema": {
+      "auth0Id": false,
+      "userId": false,
+      "is_folder": false,
+      "folder_name": false,
+      "file_info": {
+        "client_file_name": false,
+        "file_name": false,
+        "file_size_in_bytes": false,
+        "file_type": false,
+        "file_path": false
+      },
+      "uploaded_in_year": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "evenement",
+    "schema": {
+      "titel": false,
+      "intro": false,
+      "beschrijving": false,
+      "datum": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "follower",
+    "schema": {
+      "me": false,
+      "friend": false,
+      "status": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "inschrijving",
+    "schema": {
+      "opdracht": false,
+      "userId": false,
+      "organisatie": false,
+      "inschrijving": {
+        "motivatietekst": false,
+        "status": false,
+        "contractondertekend": false,
+        "reactionisviewed": false,
+        "principalassignmenturl": false
+      },
+      "inschrijvingsettings": {
+        "isdisabled": false
+      },
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "medewerkers",
+    "schema": {
+      "medewerker": false,
+      "organisatie": false,
+      "geverifieerd": false,
+      "eigenaar": false,
+      "permissions": {
+        "can_read": false,
+        "can_add": false,
+        "can_select": false,
+        "can_update": false,
+        "can_delete": false
+      },
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "notificatie",
+    "schema": {
+      "notificatietype": false,
+      "titel": false,
+      "bericht": false,
+      "profiel": false,
+      "send_to_profiel": false,
+      "gelezen": false,
+      "actionurl": false,
+      "actiontekst": false,
+      "more_information": false,
+      "bericht_van": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "opdracht",
+    "schema": {
+      "userId": false,
+      "opdracht": {
+        "status": false,
+        "aantal_ondernemers_die_je_wilt_aannemen": false,
+        "naamopdracht": false,
+        "korteomschrijving": false,
+        "preview_tekst": false,
+        "uitgebreideomschrijving": false,
+        "mijnbedrijf": false,
+        "mijnvestiging": false,
+        "plaatsvanopdracht": false,
+        "werklocatielat": false,
+        "werklocatielng": false,
+        "mogelijkheid_hybride_werken": false,
+        "startdatumopdracht": false,
+        "startdatum_opdracht_in_overleg": false,
+        "einddatumopdracht": false,
+        "aantaluurperweek": false,
+        "maximumaantaluurperweek": false,
+        "aantalurenperiode": false,
+        "uurtarief": false,
+        "uurtariefmax": false,
+        "all_in_tarief": false,
+        "opdrachttype": false,
+        "opdracht_type__opdrachtduur_optie_tot_verlenging": false,
+        "verwachte_kennismaking": {
+          "optie_1": false,
+          "optie_2": false
+        },
+        "sector": {},
+        "vakgebied": {},
+        "opleidingsniveau": false,
+        "opzegtermijn": false,
+        "concurrentiebeding": false,
+        "aansprakelijkheidsbeperkingzzper": false,
+        "minverzekerdbedragpergebeurtenis": false,
+        "minverzekerdbedragperkalenderjaar": false,
+        "eigenaar": false,
+        "opdrachtlite": false,
+        "url": false,
+        "bedrijfsnaam": false,
+        "jobfeedid": false,
+        "jobfeeduniquename": false,
+        "order": false,
+        "tellertotaalaantalkeerbekeken": false,
+        "isdasopdracht": false,
+        "afbeelding_bedrijfslogo": false,
+        "afbeelding_eigenupload": false,
+        "professiondescription": false
+      },
+      "zichtbaarheid": {
+        "zichtbaar": false,
+        "zichtbaarvanaf": false,
+        "zichtbaartot": false,
+        "allreactionsareviewed": false
+      },
+      "skills": {
+        "selected_skillcodes": {
+          "description": false,
+          "category": false,
+          "code_id": false,
+          "is_other": false
+        }
+      },
+      "das": {
+        "accorderingdasaanvraag": false,
+        "dasarchiveren": false,
+        "dasredenomtearchiveren": false,
+        "das_omschrijving_archiveren": false,
+        "dasguid": false,
+        "das_aanvraag_nummer": false,
+        "das_datum_archiveren": false,
+        "optieverlengingaantal": false,
+        "optieverlengingperiode": false,
+        "dataselectiegesprekken": false,
+        "dataterugkoppelingselectiegesprekken": false,
+        "gevraagdedocumenten": false,
+        "sluitingsdatumopdracht": false,
+        "redenvaninhuur": false,
+        "ko_criteria": false,
+        "linknaardeaanvraag": false,
+        "uurtariefminimaalopdrachtgever": false,
+        "uurtariefmaximaalopdrachtgever": false,
+        "landingspaginaurl": false,
+        "periode_beschrijving": false,
+        "opdracht_periode": false,
+        "documenten": {
+          "documenttype": false,
+          "documentnaam": false,
+          "document_deeplink": false,
+          "document_extensie": false
+        },
+        "solliciteren_verplichte_documenten": false,
+        "dasupdatebeschikbaar": false,
+        "updates": {
+          "datum": false,
+          "update": false,
+          "afgerond": false,
+          "afgerond_door_user": false
+        }
+      },
+      "admincompanysettings": {
+        "isdisabled": false,
+        "preview_tekst_op_younitednl": false
+      },
+      "intermediair": {
+        "is_intermediair_opdracht": false,
+        "intermediair_mag_voorstellen": false,
+        "opdracht_als_intermediair_tonen_of_als_intermediair_met_organisatie": false
+      },
+      "netive": {
+        "reference_key": false,
+        "jobrequisition": {
+          "publication": {
+            "status": false,
+            "channel": {
+              "channeltype": false
+            },
+            "request": {
+              "url": false,
+              "status": false,
+              "recordid": false,
+              "allocation": {
+                "step": {
+                  "name": false
+                },
+                "scale": {
+                  "name": false
+                },
+                "parcel": false,
+                "regions": {
+                  "name": false
+                },
+                "segment": false,
+                "function": {
+                  "name": false
+                },
+                "grouping": false,
+                "functionlevel": {
+                  "name": false
+                },
+                "educationlevel": {
+                  "name": false,
+                  "textkernelid": false
+                },
+                "functioncategory": {
+                  "name": false
+                }
+              },
+              "creationdate": false,
+              "award_criteria": {
+                "award_criterium": {
+                  "question": false,
+                  "recordid": false,
+                  "criterium_type": false,
+                  "criterion_type": false,
+                  "possible_answers": {
+                    "answer": {
+                      "answer": false,
+                      "points": false,
+                      "isknockout": false
+                    }
+                  }
+                }
+              },
+              "requestnumber": false,
+              "contact_details": {
+                "msp_unit": {
+                  "phonenumber": false,
+                  "name": false,
+                  "emailaddress": false
+                },
+                "msp_user": {
+                  "name": false,
+                  "initials": false,
+                  "lastname": false,
+                  "firstname": false,
+                  "middlename": false,
+                  "phonenumber": false,
+                  "emailaddress": false,
+                  "functiontitle": false
+                },
+                "requestor": {
+                  "name": false,
+                  "initials": false,
+                  "lastname": false,
+                  "firstname": false,
+                  "middlename": false,
+                  "phonenumber": false,
+                  "emailaddress": false,
+                  "functiontitle": false
+                }
+              },
+              "request_details": {
+                "end_date": false,
+                "max_rate": false,
+                "min_rate": false,
+                "summary": false,
+                "job_offer": false,
+                "rate_type": false,
+                "max_salary": false,
+                "min_salary": false,
+                "seat_count": false,
+                "start_date": false,
+                "salary_type": false,
+                "closed_reason": {
+                  "name": false,
+                  "remarks": false
+                },
+                "hours_per_week": false,
+                "function_title": false,
+                "job_description": false,
+                "currency_isocode": false,
+                "extension_option": false,
+                "job_requirements": false,
+                "extension_allowed": false,
+                "request_procedure": false,
+                "attachment_details": {
+                  "id": false,
+                  "name": false,
+                  "size": false,
+                  "content_type": false,
+                  "type": false
+                },
+                "company_information": false,
+                "attachment_parentids": {},
+                "estimated_total_hours": false,
+                "estimated_total_value": false,
+                "extension_final_enddate": false,
+                "worklocation_description": false,
+                "maximum_number_of_extensions": false
+              },
+              "lastmodified_date": false,
+              "organisation_details": {
+                "work_location": {
+                  "name": false,
+                  "address": {
+                    "streetnameadd": false,
+                    "streetname": false,
+                    "postalcode": false,
+                    "housenumberadd": false,
+                    "housenumber": false,
+                    "country": false,
+                    "city": false
+                  }
+                },
+                "department": {
+                  "name": false
+                },
+                "customer": {
+                  "name": false,
+                  "chambercommercenr": false
+                }
+              }
+            },
+            "recordid": false,
+            "channel_type": false,
+            "creation_date": false,
+            "publish_allowed": false,
+            "lastmodified_date": false,
+            "organization_name": false,
+            "maximum_submissions": false,
+            "publicationend_date": false,
+            "publication_language": false,
+            "publication_startdate": false
+          }
+        },
+        "netivearchiveren": false,
+        "netive_datum_archiveren": false,
+        "netiveredenomtearchiveren": false
+      },
+      "netive_updates": {
+        "date": false,
+        "json": false,
+        "seen_and_close": false
+      },
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "organisatie",
+    "schema": {
+      "userId": false,
+      "das": {
+        "is_das_organistatie": false,
+        "dasgroup": false
+      },
+      "netive": {
+        "isnetive": false
+      },
+      "organisatie": {
+        "bedrijfsnaam": false,
+        "dochtervan": false,
+        "kortebeschrijving": false,
+        "kostenplaatsalgemeen": false,
+        "telefoonnummer": false,
+        "algemeenemailadres": false,
+        "websitelink": false,
+        "iban": false,
+        "btwnummer": false,
+        "kvknummer": false,
+        "kvkinformatie": {},
+        "uitgebreideomschrijving": false,
+        "bezoekadres": {
+          "straatnaam": false,
+          "huisnummer": false,
+          "eventueletoevoeging": false,
+          "postcode": false,
+          "plaats": false,
+          "provincie": false,
+          "land": false
+        },
+        "datum_van_oprichting": false,
+        "geverifieerd": false,
+        "geverifieerd_door": false,
+        "benikintermediair": false,
+        "sector": false,
+        "eigenaar_rol": false,
+        "ik_wil_mijn_bedrijf_delen_op_younitednl": false,
+        "totaal_aantal_medewerkers": false,
+        "kvk_gebruikt": false,
+        "medewerkers": {},
+        "total_company_user": false
+      },
+      "admincompanysettings": {
+        "isdisabled": false,
+        "recente_gegevens_voor_het_bijsnijden_van_logos": false
+      },
+      "intermediair": {
+        "is_intermediair_organisatie": false,
+        "intermediair_guid_in_services": false,
+        "eigenaar": false
+      },
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "post",
+    "schema": {
+      "post": {
+        "titel": false,
+        "bericht": false,
+        "introductie": false,
+        "poster": false,
+        "type": false,
+        "sector": false,
+        "interessegebieden": false,
+        "parentid": false,
+        "datumgepost": false,
+        "hasexternallink": false,
+        "linktekst": false,
+        "linkurl": false,
+        "tooninondernemernieuwswidget": false,
+        "gemarkeerdalsspam": false,
+        "zichtbaarheidvanpost": false,
+        "management": {
+          "archief": false,
+          "redenomteblokkeren": false
+        }
+      },
+      "admincompanysettings": {
+        "isdisabled": false
+      },
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "role",
+    "schema": {
+      "name": false,
+      "code": false,
+      "is_active": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "standardtekst",
+    "schema": {
+      "key": false,
+      "default_text": false,
+      "module_name": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "spamreport",
+    "schema": {
+      "userId": false,
+      "raportagedatum": false,
+      "post_id": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "storemolliebillingcompany",
+    "schema": {
+      "partnerid": false,
+      "profileid": false,
+      "mollieapikey": false,
+      "mollieorganisationname": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "storeorder",
+    "schema": {
+      "selldate": false,
+      "paymenturl": false,
+      "ordertotalprice": false,
+      "transactionstatus": false,
+      "product_id": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "storepaymentmethode",
+    "schema": {
+      "fixedfee": false,
+      "shortname": false,
+      "percentagefee": false,
+      "refundfixedfee": false,
+      "displaynameinstore": false,
+      "molliepaymentmethodid": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "storeproduct",
+    "schema": {
+      "product": {
+        "naam": false,
+        "inhoud": false,
+        "prijzen": {
+          "prijs": false,
+          "actieprijs": false,
+          "btwpercentage": false,
+          "storemollieorganisation": false
+        },
+        "licentie": false,
+        "subtitel": false,
+        "bestellink": false,
+        "leverancier": false,
+        "mediavideourl": false,
+        "ctabesteltekst": false,
+        "productgroepen": false,
+        "korteintroductie": false,
+        "verbergeninstore": false,
+        "connectedproductviaapi": false,
+        "stuurgebruikersinfomeeindeurlbijdoorklikkennaardebestellink": false
+      }
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "storeproductgroep",
+    "schema": {
+      "naam": false,
+      "subtitel": false,
+      "introductietekst": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "storesupplier",
+    "schema": {
+      "leverancier": {
+        "naam": false,
+        "emailadres": false,
+        "algemeneurl": false
+      },
+      "zichtbaarheid": {
+        "period_start": false,
+        "period_end": false,
+        "zichtbaar": false
+      },
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "systeemnotificatie",
+    "schema": {
+      "titel": false,
+      "tekst": false,
+      "ctabuttontekst": false,
+      "ctabuttonurl": false,
+      "meldingisvoordezerollen": false,
+      "tekstvoorcheckbox": false,
+      "zichtbaarvanaf": false,
+      "zichtbaartot": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "taak",
+    "schema": {
+      "userId": false,
+      "taakbeschrijving": false,
+      "afgerond": false,
+      "toevoegdatum": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "user_cursussen",
+    "schema": {
+      "auth0Id": false,
+      "userId": false,
+      "cursus": false,
+      "nogbezig": false,
+      "omschrijving": false,
+      "afgeronddatum": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "user_opleidingen",
+    "schema": {
+      "auth0Id": false,
+      "userId": false,
+      "opleidingsniveau": false,
+      "studierichting": false,
+      "opleidingsinstelling": false,
+      "locatie": false,
+      "nogbezig": false,
+      "niet_afgerond": false,
+      "van": false,
+      "tot": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "user_socialmedia",
+    "schema": {
+      "auth0Id": false,
+      "userId": false,
+      "social_links": {
+        "name": false,
+        "link": false,
+        "icon_name": false,
+        "is_extra": false,
+        "order": false
+      },
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "users",
+    "schema": {
+      "identification": false,
+      "profiel": {
+        "voornaam": false,
+        "tussenvoegsel": false,
+        "achternaam": false,
+        "emailadres": false,
+        "profile_image": false,
+        "externeidentifier": false,
+        "geslacht": false,
+        "telefoonnummer": false,
+        "mobielnummer": false,
+        "persoonlijkewebsite": false,
+        "adres": {
+          "straat": false,
+          "huisnummer": false,
+          "evttoevoeg": false,
+          "postcode": false,
+          "woonplaats": false,
+          "provincie": false,
+          "land": false
+        },
+        "ikbeneen": false,
+        "werkdenkniveau": false,
+        "overmij": false,
+        "motivatie": false,
+        "priveadres": false,
+        "sector": {
+          "type": {}
+        },
+        "vakgebied": {
+          "type": {}
+        },
+        "ondernemer_sinds": false,
+        "lead": {
+          "islead": false,
+          "is_activated": false,
+          "voornaam": false,
+          "tussenvoegsel": false,
+          "achternaam": false,
+          "emailadres": false,
+          "telefoonnummer": false,
+          "herkomst": false,
+          "rol": false,
+          "bedrijfsnaam": false,
+          "kvknummer": false,
+          "invited_by": false
+        }
+      },
+      "rechten": {
+        "role": false,
+        "laatstelogindatum": false,
+        "ingelogd_in_de_younited_app": false,
+        "laatste_login_datum_younited_app": false,
+        "geregistreerd_via_platform": false,
+        "is_medewerker": false
+      },
+      "instellingen": {
+        "wizard": {
+          "bedrijf_toegevoegd": false,
+          "wizard_huidige_stap": false,
+          "wizard_huidige_sub_stap": false,
+          "wizard_stap_afgerond": false,
+          "wizard_sub_stap_afgerond": false
+        },
+        "updates": {
+          "deusgmartkplaats": false,
+          "deusgstore": false,
+          "decommunity": false
+        },
+        "interesse": {
+          "opdrachten": false,
+          "administratie": false,
+          "verzekeringen": false,
+          "marketing": false,
+          "werkprivbalans": false,
+          "netwerken": false,
+          "financin": false,
+          "ontwikkeling": false,
+          "sales": false,
+          "ondernemen": false
+        },
+        "jobpreferences": {
+          "uurtariefminimaal": false,
+          "uurtariefmaximaal": false,
+          "urenminimaal": false,
+          "urenmaximaal": false,
+          "afstandminimaal": false,
+          "afstandmaximaal": false
+        },
+        "toonmijncursussen": false,
+        "profiel100compleet": false,
+        "toonmijnopleidingen": false,
+        "gevonden_en_feedback": {
+          "gevonden_via": false,
+          "wil_je_benaderd_worden_voor_onderzoek__feedback": false
+        },
+        "nieuwsbrief_younite": {
+          "signup": false
+        },
+        "toonmijnvaardigheden": false,
+        "toonmijnwerkervering": false,
+        "ikwilwordenverwijderd": false,
+        "profile100compleetdatum": false,
+        "voorwaardengeaccepteerd": false,
+        "communityconnectiegoedkeuring": false,
+        "ikwilgevondenwordenindecommunity": false,
+        "diensten_die_ik_zelf_geregeld_heb": {
+          "urenregistratie": false,
+          "facturatie": false,
+          "boekhouding": false,
+          "bedrijfsaansprakelijkheidsverzekering": false,
+          "pensioen": false,
+          "overig_namelijk": false,
+          "overige": {
+            "waarde": false
+          }
+        },
+        "datumaanmakenssoaccountopleidingnl": false,
+        "ikbennietbeschikbaarvooropdrachten": false,
+        "ikwilmijngegevensdelenopyounitednl": false,
+        "ikwilgevondenwordendoorintermediairs": false,
+        "ikwilgevondenkunnenwordendooropdrachtgevers": false,
+        "selecteerhierevtdedatumwanneerjeweerbeschikbaarbent": false,
+        "heeft_een_eigen_profielfoto_toegevoegd_aan_profiel": false,
+        "ikhebtoestemminggegevenommijngegevenstedelenmetopleidingnl": false,
+        "gewenste_vaardigheden": {
+          "code_id": false,
+          "category": false,
+          "description": false
+        },
+        "mijn_documentenmelding": false,
+        "chat_gpt_datum_gebruiken": false,
+        "wil_je_chat_gpt_gebruiken": false,
+        "ik_ga_younited_gebruiken_voor": {
+          "beheren_van_mijn_contracten": false,
+          "zoeken_naar_een_zelfstandig_ondernemer": false
+        },
+        "ik_wil_graag_thuis_kunnen_werken": false
+      },
+      "elevator_pitch": {
+        "deelgenomen_aan_een_elevatorpitch": false,
+        "vimeo_video_details": {
+          "video_id": false,
+          "video_link": false
+        }
+      },
+      "dashboardsettings": {
+        "quicklinks": {
+          "id": false,
+          "x": false,
+          "y": false,
+          "w": false,
+          "h": false,
+          "content": {
+            "title": false,
+            "link": false
+          }
+        }
+      },
+      "opgelslagenfreelancezoekopdrachten": {
+        "plaatsnaam": false,
+        "afstand": false,
+        "skills": false
+      },
+      "skills": {
+        "selected_skillcodes": {
+          "name": false,
+          "code_id": false,
+          "category": false,
+          "is_extra": false
+        }
+      },
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "user_notification",
+    "schema": {
+      "system_notification": false,
+      "userId": false,
+      "is_read": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "vestiging",
+    "schema": {
+      "userId": false,
+      "organisatie": false,
+      "naam": false,
+      "kostenplaatsnr": false,
+      "emailadres": false,
+      "telefoonnummer": false,
+      "adres": {
+        "straatnaam": false,
+        "huisnummer": false,
+        "evttoevoeging": false,
+        "postcode": false,
+        "plaats": false
+      },
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "widget_banner",
+    "schema": {
+      "order": false,
+      "title": false,
+      "ctaurl": false,
+      "ctatekst": false,
+      "typelink": false,
+      "activated": false,
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  },
+  {
+    "schema_name": "user_werkervaring",
+    "schema": {
+      "auth0Id": false,
+      "userId": false,
+      "functie": false,
+      "bedrijf": false,
+      "locatie": false,
+      "beschrijving": false,
+      "status": false,
+      "startdatum": false,
+      "einddatum": false,
+      "type": false,
+      "is_current": false,
+      "professioncode": false,
+      "professiondescription": false,
+      "professiongroupcode": false,
+      "professiongroupdescription": false,
+      "professionclasscode": false,
+      "professionclassdescription": false,
+      "onet2010code": false,
+      "onet2010description": false,
+      "isco2008code": false,
+      "isco2008description": false,
+      "skills": {
+        "name": false,
+        "code_id": false,
+        "category": false,
+        "is_extra": false
+      },
+      "created_by": false,
+      "updated_by": false
+    },
+    "rol": ""
+  }
+]

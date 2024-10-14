@@ -1,0 +1,31 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dataRivison.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.0.2",
+    "axios": "^1.6.2",
+    "exceljs": "^4.4.0",
+    "express": "^4.18.2",
+    "faker": "^6.6.6",
+    "file-type": "^19.0.0",
+    "fs": "^0.0.1-security",
+    "joi": "^17.13.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.6.3",
+    "redis": "^4.6.12",
+    "sharp": "^0.33.2",
+    "ws": "^8.16.0",
+    "xlsx": "^0.18.5"
+  }
+}

@@ -1,0 +1,94 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebSocket Chat</title>
+  </head>
+  <body>
+    <h1>WebSocket Chat</h1>
+
+    <div>
+      <label for="username">Username:</label>
+      <input type="text" id="username" />
+      <button onclick="joinChat()">Join Chat</button>
+    </div>
+
+    <div>
+      <label for="message">Message:</label>
+      <input type="text" id="message" />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <div>
+      <label for="room">Room:</label>
+      <input type="text" id="room" />
+      <button onclick="joinRoom()">Join Room</button>
+      <button onclick="leaveRoom()">Leave Room</button>
+    </div>
+
+    <div>
+      <p>Online Users: <span id="onlineUsers"></span></p>
+    </div>
+
+    <div id="chatBox"></div>
+
+    <script>
+      const ws = new WebSocket("ws://localhost:3000");
+      const chatBox = document.getElementById("chatBox");
+      const onlineUsersElement = document.getElementById("onlineUsers");
+
+      ws.onmessage = (event) => {
+        const data = JSON.parse(event.data);
+
+        switch (data.type) {
+          case "chat":
+            displayMessage(data.from, data.message);
+            break;
+          case "onlineStatus":
+            displayOnlineUsers(data.users);
+            break;
+          case "typing":
+            displayTypingStatus(data.from);
+            break;
+        }
+      };
+
+      function joinChat() {
+        const username = document.getElementById("username").value;
+        ws.send(JSON.stringify({ type: "join", username }));
+      }
+
+      function sendMessage() {
+        const message = document.getElementById("message").value;
+        const to = document.getElementById("to").value;
+        const room = document.getElementById("room").value;
+
+        ws.send(JSON.stringify({ type: "chat", message, to, room }));
+      }
+
+      function joinRoom() {
+        const room = document.getElementById("room").value;
+        ws.send(JSON.stringify({ type: "join", room }));
+      }
+
+      function leaveRoom() {
+        const room = document.getElementById("room").value;
+        ws.send(JSON.stringify({ type: "leave", room }));
+      }
+
+      function displayMessage(from, message) {
+        chatBox.innerHTML += `<p><strong>${from}:</strong> ${message}</p>`;
+      }
+
+      function displayOnlineUsers(users) {
+        onlineUsersElement.textContent = users.join(", ");
+      }
+
+      function displayTypingStatus(username) {
+        chatBox.innerHTML += `<p><em>${username} is typing...</em></p>`;
+      }
+    </script>
+  </body>
+</html>
