@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "dataRivison.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,6 +22,7 @@
     "lodash": "^4.17.21",
     "moment": "^2.30.1",
     "mongodb": "^6.5.0",
+    "mongodb-client-encryption": "^6.1.0",
     "mongoose": "^8.6.3",
     "redis": "^4.6.12",
     "sharp": "^0.33.2",

@@ -310,29 +310,60 @@ const { ObjectId } = require("mongodb");
 //   environments.push({ ...iterator, ...dbInfo });
 // }
 
-// setTimeout(async () => {
-// await db
-//   .useDb("new")
-//   .db.admin()
-//   .command({
-//     createUser: "newuser3",
-//     pwd: "newuser",
-//     roles: [{ role: "readWrite", db: "new" }],
-//   })
-//   .then((res) => {
-//     if (res.ok === 1) {
-//       console.log(res, "res");
-//     }else{
-//       console.log('fa');
-//     }
-//   })
-//   .catch((err) => {
-//     console.log(err, "err");
-//   });
-// }, 2000);
+let db = null;
 
-// const dbData = db.createUser({
-//   user: "root",
+try {
+  db = mongoose.createConnection(
+    "mongodb://root:root@localhost:27017"
+  );
+
+  //db = await db.asPromise();
+} catch (error) {
+  console.log(error, "");
+}
+// mongodb://root:root@localhost:27017
+
+setTimeout(async () => {
+  db = await db.asPromise();
+
+  // await db.useDb("admin").runCommand({
+  //   createUser: "newuser1",
+  //   pwd: "newuser",
+  //   roles: [{ role: "readWrite", db: "new" }],
+  // });
+
+  // await db
+  //   .useDb("new")
+  //   .db.admin()
+  //   .command({
+  //     createUser: "newuser1",
+  //     pwd: "newuser",
+  //     roles: [{ role: "readWrite", db: "new" }],
+  //   })
+  //   .then((res) => {
+  //     if (res.ok === 1) {
+  //       console.log(res, "res");
+  //     } else {
+  //       console.log("fa");
+  //     }
+  //   })
+  //   .catch((err) => {
+  //     console.log(err, "err");
+  //   });
+}, 2000);
+
+process.on("SIGINT", async () => {
+  await db.close();
+  console.log("SIGINT");
+});
+process.on("SIGTERM", async () => {
+  await db.close();
+  console.log("SIGTERM");
+});
+
+// const dbData = db
+// .createUser({
+//   user: "nox_superuser",
 //   pwd: "zUCkdzIvvf6RG3Dc1UugBq3CM7ZTcVeP",
 //   roles: [
 //     "userAdminAnyDatabase",
@@ -341,4 +372,10 @@ const { ObjectId } = require("mongodb");
 //     "restore",
 //     "backup",
 //   ],
+// })
+// .then((res) => {
+//   console.log("res++++", res);
+// })
+// .catch((err) => {
+//   console.log("err++++", err);
 // });

@@ -1,0 +1,41 @@
+# Drop database user
+[
+  "dhairya.chavda_Development",
+  "dhairya.chavda_Acceptance",
+  "dhairya.chavda_Production",
+  "comiro3128_Development",
+  "comiro3128_Acceptance",
+  "comiro3128_Production",
+  "gafofe1427_Development",
+  "gafofe1427_Acceptance",
+  "gafofe1427_Production",
+  "dixic32665_Development",
+  "dixic32665_Acceptance",
+  "dixic32665_Production",
+].forEach((user) => {
+  db.dropUser(user);
+});
+
+# Drop database
+[
+  "671b295efc2da644e74962c9_Development",
+  "671b295efc2da644e74962c9_Acceptance",
+  "671b295efc2da644e74962c9_Production",
+
+  "6758071e2c27c4043cdba733_Development",
+  "6758071e2c27c4043cdba733_Acceptance",
+  "6758071e2c27c4043cdba733_Production",
+
+  "67580dfe54c184da02eaf319_Development",
+  "67580dfe54c184da02eaf319_Acceptance",
+  "67580dfe54c184da02eaf319_Production",
+
+  "67581e4854c184da02eaf56e_Development",
+  "67581e4854c184da02eaf56e_Acceptance",
+  "67581e4854c184da02eaf56e_Production",
+].forEach((database) => {
+  db.getMongo().getDB(database);
+  print("dropping db " + database);
+  db.dropDatabase();
+});
+
