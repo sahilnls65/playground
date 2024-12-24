@@ -313,18 +313,19 @@ const { ObjectId } = require("mongodb");
 let db = null;
 
 try {
-  db = mongoose.createConnection(
-    "mongodb://root:root@localhost:27017"
-  );
+  db = mongoose.createConnection("mongodb://localhost:27017/test");
 
   //db = await db.asPromise();
 } catch (error) {
   console.log(error, "");
 }
-// mongodb://root:root@localhost:27017
 
 setTimeout(async () => {
   db = await db.asPromise();
+
+  await db
+    .collection("users")
+    .updateOne({ email: "sahil@gmail.com" }, { $set: { sahil: "sahil" } });
 
   // await db.useDb("admin").runCommand({
   //   createUser: "newuser1",
