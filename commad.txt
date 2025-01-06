@@ -1,3 +1,25 @@
+git fetch --prune
+
+const dbData = db
+.createUser({
+  user: "user",
+  pwd: "pass",
+  roles: [
+    "userAdminAnyDatabase",
+    "dbAdminAnyDatabase",
+    "readWriteAnyDatabase",
+    "restore",
+    "backup",
+  ],
+})
+.then((res) => {
+  console.log("res++++", res);
+})
+.catch((err) => {
+  console.log("err++++", err);
+});
+
+
 # Drop database user
 [
   "dhairya.chavda_Development",
