@@ -58,6 +58,8 @@ const dbData = db
 ].forEach((database) => {
   db.getMongo().getDB(database);
   print("dropping db " + database);
+
+mongorestore --uri="" --db=test folder/*
   db.dropDatabase();
 });
 
