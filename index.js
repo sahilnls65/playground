@@ -195,5 +195,9 @@ function separateTrueFalseFromObject(obj) {
 }
 
 const { trueObj: separatedTrue, falseObj: separatedFalse } = separateTrueFalseFromObject(schema);
-console.log(separatedTrue);
-console.log(separatedFalse);
+// console.log(separatedTrue);
+// console.log(separatedFalse);
+
+import * as lucide from "lucide-react";
+
+console.log(lucide)

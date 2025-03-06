@@ -267,13 +267,14 @@ const fields = [
   },
   {
     schema_definition: {
-      type: "String",
+      type: "Alias",
     },
     field: "zip",
     path: "address.zip",
-    type: "String",
+    type: "Alias",
     fieldType: "Object",
     meta: {
+      interface: "list-m2a",
       required: true,
       validations: {
         rules: [
@@ -573,10 +574,11 @@ const fields = [
   {
     field: "arraytest",
     path: "comments.replies.newarray.arraytest",
-    type: "Array",
+    type: "Alias",
     fieldType: "Object",
     meta: {
       required: false,
+      interface: "list-m2a",
       validations: {
         rules: [
           // {
@@ -591,7 +593,7 @@ const fields = [
       },
     },
     schema_definition: {
-      type: "String",
+      type: "Alias",
     },
   },
   {
@@ -735,6 +737,48 @@ const objectId = (value, helpers) => {
 
 function convertFieldsToJoiFormat(fields) {
   const convertedData = {};
+  let extraValidations = {
+    type: "object",
+    keys: {
+      sort: {
+        type: "number",
+        validations: {
+          rules: [
+            {
+              rule: "required",
+              required: { value: false },
+            },
+          ],
+        },
+      },
+      item: {
+        type: "string",
+        validations: {
+          rules: [
+            {
+              rule: "required",
+              required: { value: true },
+            },
+            {
+              rule: "objectid",
+              objectid: {},
+            },
+          ],
+        },
+      },
+      collection: {
+        type: "string",
+        validations: {
+          rules: [
+            {
+              rule: "required",
+              required: { value: true },
+            },
+          ],
+        },
+      },
+    },
+  };
 
   function addToConvertedData(currentLevel, pathParts, field, validationRules) {
     pathParts.forEach((part, index) => {
@@ -747,14 +791,22 @@ function convertFieldsToJoiFormat(fields) {
 
         if (type === "Alias") {
           type = "array";
-          itsAliasType = {
-            items: {
-              type: "string",
-              validations: {
-                rules: [...validationRules],
+          if (field.meta.interface === "list-m2a") {
+            itsAliasType = {
+              items: {
+                ...extraValidations
               },
-            },
-          };
+            };
+          } else {
+            itsAliasType = {
+              items: {
+                type: "string",
+                validations: {
+                  rules: [...validationRules],
+                },
+              },
+            };
+          }
         } else if (type === "ObjectId") {
           type = "string";
         } else if (field.type === "Array" && field.fieldType === "Object" && type !== field.type) {
@@ -822,6 +874,9 @@ function convertFieldsToJoiFormat(fields) {
         allow: { value: ["", null] },
       });
     }
+
+    if (field.meta.interface === "list-m2a") {
+    }
     if (field.type === "Alias" || field.type === "ObjectId") {
       type = "string";
       validationRules.push({
@@ -842,15 +897,24 @@ function convertFieldsToJoiFormat(fields) {
     } else if (field.fieldType === "Object") {
       addToConvertedData(convertedData, field.path.split("."), field, validationRules);
     } else if (field.fieldType === "Array") {
-      convertedData[field.field] = {
-        type: field.fieldType?.toLowerCase(),
-        items: {
-          type: field.schema_definition.type,
-          validations: {
-            rules: [...validationRules],
+      if (field.meta.interface === "list-m2a") {
+        convertedData[field.field] = {
+          type: field.fieldType?.toLowerCase(),
+          items: {
+            ...extraValidations,
           },
-        },
-      };
+        };
+      } else {
+        convertedData[field.field] = {
+          type: field.fieldType?.toLowerCase(),
+          items: {
+            type: field.schema_definition.type,
+            validations: {
+              rules: [...validationRules],
+            },
+          },
+        };
+      }
     }
   });
 
