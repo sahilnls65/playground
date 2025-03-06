@@ -58,9 +58,10 @@ const dbData = db
 ].forEach((database) => {
   db.getMongo().getDB(database);
   print("dropping db " + database);
-
-mongorestore --uri="" --db=test folder/*
   db.dropDatabase();
 });
+
+mongorestore --uri="mongodb+srv://<username>:<password>@<cluster-url>/dbname" --db=test folder/*
+mongodump --uri="mongodb+srv://<username>:<password>@<cluster-url>/dbname" --out=/path/to/backup
 
 db.getCollectionNames().forEach((cn)=> cn.includes("_revision") && db.collection(cn).drop())
