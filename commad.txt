@@ -64,6 +64,6 @@ const dbData = db
 mongorestore --uri="mongodb+srv://<username>:<password>@<cluster-url>/dbname" --db=test folder/*
 mongodump --uri="mongodb+srv://<username>:<password>@<cluster-url>/dbname" --out=/path/to/backup
 
-sudo chown -R youruser:youruser
+sudo chown -R $USER /folder
 
 db.getCollectionNames().forEach((cn)=> cn.includes("_revision") && db.collection(cn).drop())
