@@ -67,3 +67,24 @@ mongodump --uri="mongodb+srv://<username>:<password>@<cluster-url>/dbname" --out
 sudo chown -R $USER /folder
 
 db.getCollectionNames().forEach((cn)=> cn.includes("_revision") && db.collection(cn).drop())
+
+# Protected branches
+protected=("development" "acceptance" "master")
+
+# Fetch latest remote changes and prune deleted branches
+git fetch --prune
+
+# Loop through local branches
+for branch in $(git branch | sed 's/..//'); do
+  # Skip protected branches
+  if [[ " ${protected[@]} " =~ " $branch " ]]; then
+    continue
+  fi
+
+  # If branch is not on remote, delete it
+  if ! git show-ref --quiet refs/remotes/origin/$branch; then
+    echo "Deleting local branch: $branch (not on remote)"
+    git branch -D "$branch"
+  fi
+done
+
