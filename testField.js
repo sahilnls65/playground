@@ -429,8 +429,7 @@ function convertFieldsToConvertedData(fields) {
         });
       } else if (field.field_type === "Object") {
         addToConvertedData(convertedData.fields, field.path.split("."), field);
-      }
-       else if (field.field_type === "Array") {
+      } else if (field.field_type === "Array") {
         convertedData.fields.push({
           fieldName: field.field,
           type: "Array",
@@ -443,7 +442,7 @@ function convertFieldsToConvertedData(fields) {
   return convertedData;
 }
 
-console.log(convertFieldsToConvertedData(fields), "convertFieldsToConvertedData(fields)");
+// console.log(convertFieldsToConvertedData(fields), "convertFieldsToConvertedData(fields)");
 
 function convertToSchemaTypes(fields) {
   const schemaFields = {};
@@ -534,7 +533,7 @@ function convertToSchemaTypes(fields) {
   return schemaFields;
 }
 
-// const mongoose = require("mongoose");
+const mongoose = require("mongoose").Types.ObjectId;
 
 // mongoose
 //   .connect("mongodb://root:root@localhost:27017", { dbName: "test" })
@@ -594,3 +593,6 @@ function convertToSchemaTypes(fields) {
 //   .catch((err) => {
 //     console.error("Error connecting to MongoDB:", err);
 //   });
+
+const extractedFields = fields.map(({ field, path }) => ({ field, path, _id: new mongoose() }));
+console.log(JSON.parse(JSON.stringify(extractedFields)));

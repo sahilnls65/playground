@@ -10,7 +10,9 @@ const db = mongoose.connect("mongodb://root:root@localhost:27017", { dbName: "te
 const itemSchema = new mongoose.Schema({
   name: String,
   sortIndex: Number,
-  parent: { type: mongoose.Schema.Types.ObjectId, ref: "Item", default: null },
+  path: String,
+  field: String,
+  parent_id: { type: mongoose.Schema.Types.ObjectId, ref: "Item", default: null },
   updatedAt: Number,
 });
 
@@ -58,65 +60,57 @@ app.get("/get-tree", async (req, res) => {
 
 // Sample Test Data
 app.post("/seed", async (req, res) => {
+  await Item.deleteMany({});
   const sampleData = [
     {
-      _id: new ObjectId("64b8f1a16700b9756c000001"),
-      name: "Item 1",
-      sortIndex: 0,
-      parent: null,
-      updatedAt: 1672531200000,
+      _id: "67dd4327642ae3755f1198ab",
+      field: "field_3",
+      path: "group_1.field_3",
+      parent_id: "67dd431b642ae3755f11989f",
     },
     {
-      _id: new ObjectId("64b8f1a16700b9756c000002"),
-      name: "Item 2",
-      sortIndex: 1,
-      parent: null,
-      updatedAt: 1672531201000,
+      _id: "67dd4334642ae3755f1198b8",
+      field: "field_4",
+      path: "group_1.field_4",
+      parent_id: "67dd431b642ae3755f11989f",
     },
     {
-      _id: new ObjectId("64b8f1a16700b9756c000003"),
-      name: "Item 3",
-      sortIndex: 2,
-      parent: null,
-      updatedAt: 1672531202000,
+      _id: "67dd4342642ae3755f1198c5",
+      field: "group_2",
+      path: "group_1.group_2",
+      parent_id: "67dd431b642ae3755f11989f",
     },
     {
-      _id: new ObjectId("64b8f1a16700b9756c000004"),
-      name: "Item 4",
-      sortIndex: 0,
-      parent: new ObjectId("64b8f1a16700b9756c000003"),
-      updatedAt: 1672531203000,
+      _id: "67dd4350642ae3755f1198d2",
+      field: "field_5",
+      path: "group_1.group_2.field_5",
+      parent_id: "67dd4342642ae3755f1198c5",
     },
     {
-      _id: new ObjectId("64b8f1a16700b9756c000005"),
-      name: "Item 5",
-      sortIndex: 1,
-      parent: new ObjectId("64b8f1a16700b9756c000003"),
-      updatedAt: 1672531204000,
+      _id: "67dd435a642ae3755f1198df",
+      field: "field_6",
+      path: "group_1.group_2.field_6",
+      parent_id: "67dd4342642ae3755f1198c5",
     },
     {
-      _id: new ObjectId("64b8f1a16700b9756c000006"),
-      name: "Item 6",
-      sortIndex: 3,
-      parent: null,
-      updatedAt: 1672531205000,
+      _id: "67dd4365642ae3755f1198ec",
+      field: "group_3",
+      path: "group_3",
+      parent_id: null,
     },
     {
-      _id: new ObjectId("64b8f1a16700b9756c000007"),
-      name: "Item 7",
-      sortIndex: 4,
-      parent: null,
-      updatedAt: 1672531206000,
+      _id: "67dd436f642ae3755f1198f8",
+      field: "field_7",
+      path: "group_3.field_7",
+      parent_id: "67dd4365642ae3755f1198ec",
     },
     {
-      _id: new ObjectId("64b8f1a16700b9756c000008"),
-      name: "Item 8",
-      sortIndex: 0,
-      parent: new ObjectId("64b8f1a16700b9756c000007"),
-      updatedAt: 1672531207000,
+      _id: "67dd4377642ae3755f119905",
+      field: "field_8",
+      path: "group_3.field_8",
+      parent_id: "67dd4365642ae3755f1198ec",
     },
   ];
-
   try {
     await Item.deleteMany({});
     for (const item of sampleData) {
@@ -173,6 +167,82 @@ app.post("/update-sort", async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
+});
+
+function convertToRegexPattern(str) {
+  return `^${str.replace(/\./g, "\\.")}`;
+}
+
+app.post("/update-path", async (req, res) => {
+  let newPath = req.body.newPath;
+  let oldPath = req.body.oldPath;
+
+  const newParentPath = newPath.includes(".") ? newPath.split(".").slice(0, -1).join(".") : newPath;
+
+  let newParent = newParentPath ? await Item.findOne({ path: newParentPath }, { _id: 1 }) : null;
+  let newParentId = newParent ? newParent._id : null;
+
+  const oldParentId = await Item.findOne({ path: oldPath }, { _id: 1 });
+
+  console.log(newParentId, "newParentId", oldParentId);
+  // return;
+  await Item.updateMany({}, [
+    {
+      $set: {
+        path: {
+          $cond: {
+            if: {
+              $regexMatch: {
+                input: "$path",
+                regex: convertToRegexPattern(`${oldPath}.`),
+              },
+            },
+            then: {
+              $replaceOne: {
+                input: "$path",
+                find: `${oldPath}.`,
+                replacement: newPath ? `${newPath}.` : "",
+              },
+            },
+            else: "$path",
+          },
+        },
+        parent_id: {
+          $cond: {
+            if: { $eq: ["$parent_id", oldParentId?._id] },
+            then: newParentId,
+            else: "$parent_id",
+          },
+        },
+      },
+    },
+  ]);
+
+  // const fieldsToUpdate = await Item.find({
+  //   path: { $regex: `^${oldPath}(\.|$)` },
+  // });
+
+  // let idMap = {};
+
+  // for (let field of fieldsToUpdate) {
+  //   let updatedPath = field.path.replace(new RegExp(`^${oldPath}`), newPath);
+
+  //   let parentPath = updatedPath.includes(".")
+  //     ? updatedPath.split(".").slice(0, -1).join(".")
+  //     : null;
+
+  //   let parentId = null;
+  //   if (parentPath) {
+  //     parentId = idMap[parentPath] || (await Item.findOne({ path: parentPath }))?._id || null;
+  //   }
+
+  //   idMap[updatedPath] = field._id;
+
+  //   await Item.updateOne({ _id: field._id }, { $set: { path: updatedPath, parentId: parentId } });
+  // }
+
+  res.send("OK");
+  console.log("Path and Parent ID updated successfully.");
 });
 
 const PORT = 3000;

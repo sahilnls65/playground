@@ -156,575 +156,805 @@
 
 // const Joi = require("joi");
 
+// const fields = [
+//   {
+//     schema_definition: {
+//       type: "String",
+//     },
+//     field: "username",
+//     path: "username",
+//     type: "String",
+//     fieldType: "Single",
+//     meta: {
+//       required: false,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "contains",
+//             contains: { value: "sahil", insensitive: false },
+//           },
+//           {
+//             rule: "contains",
+//             contains: { value: "test1", insensitive: false },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "String",
+//     },
+//     field: "email",
+//     path: "email",
+//     type: "String",
+//     fieldType: "Single",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "contains",
+//             contains: { value: "sahil", insensitive: false },
+//           },
+//           {
+//             rule: "contains",
+//             contains: { value: "test1", insensitive: false },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "Object",
+//     },
+//     field: "address",
+//     path: "address",
+//     type: "Object",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "String",
+//     },
+//     field: "street",
+//     path: "address.street",
+//     type: "String",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "contains",
+//             contains: { value: "sahil", insensitive: false },
+//           },
+//           {
+//             rule: "contains",
+//             contains: { value: "test1", insensitive: false },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "String",
+//     },
+//     field: "city",
+//     path: "address.city",
+//     type: "String",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "contains",
+//             contains: { value: "sahil", insensitive: false },
+//           },
+//           {
+//             rule: "contains",
+//             contains: { value: "test1", insensitive: false },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "Alias",
+//     },
+//     field: "zip",
+//     path: "address.zip",
+//     type: "Alias",
+//     fieldType: "Object",
+//     meta: {
+//       interface: "list-m2a",
+//       required: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "contains",
+//             contains: { value: "sahil", insensitive: false },
+//           },
+//           {
+//             rule: "contains",
+//             contains: { value: "test1", insensitive: false },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "ObjectId",
+//     },
+//     field: "one_to_many",
+//     path: "address.one_to_many",
+//     type: "ObjectId",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [],
+//       },
+//     },
+//   },
+
+//   {
+//     schema_definition: {
+//       type: "Array",
+//     },
+//     field: "comments",
+//     path: "comments",
+//     type: "Array",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "contains",
+//             contains: { value: "sahil", insensitive: false },
+//           },
+//           {
+//             rule: "contains",
+//             contains: { value: "test1", insensitive: false },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "String",
+//     },
+//     field: "author",
+//     path: "comments.author",
+//     type: "String",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "contains",
+//             contains: { value: "sahil", insensitive: false },
+//           },
+//           {
+//             rule: "contains",
+//             contains: { value: "test1", insensitive: false },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "String",
+//     },
+//     field: "text",
+//     path: "comments.text",
+//     type: "String",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "contains",
+//             contains: { value: "sahil", insensitive: false },
+//           },
+//           {
+//             rule: "contains",
+//             contains: { value: "test1", insensitive: false },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "Date",
+//     },
+//     field: "date",
+//     path: "comments.date",
+//     type: "Date",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           // {
+//           //   rule: "contains",
+//           //   contains: { value: "sahil", insensitive: false },
+//           // },
+//           // {
+//           //   rule: "contains",
+//           //   contains: { value: "test1", insensitive: false },
+//           // },
+//         ],
+//       },
+//     },
+//   },
+
+//   {
+//     schema_definition: {
+//       type: "Object",
+//     },
+//     field: "replies",
+//     path: "comments.replies",
+//     type: "Object",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "contains",
+//             contains: { value: "sahil", insensitive: false },
+//           },
+//           {
+//             rule: "contains",
+//             contains: { value: "test1", insensitive: false },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "String",
+//     },
+//     field: "replyAuthor",
+//     path: "comments.replies.author",
+//     type: "String",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "contains",
+//             contains: { value: "sahil", insensitive: false },
+//           },
+//           {
+//             rule: "contains",
+//             contains: { value: "test1", insensitive: false },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "String",
+//     },
+//     field: "replyText",
+//     path: "comments.replies.text",
+//     type: "String",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "contains",
+//             contains: { value: "sahil", insensitive: false },
+//           },
+//           {
+//             rule: "contains",
+//             contains: { value: "test1", insensitive: false },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "Date",
+//     },
+//     field: "replyDate",
+//     path: "comments.replies.date",
+//     type: "Date",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           // {
+//           //   rule: "contains",
+//           //   contains: { value: "sahil", insensitive: false },
+//           // },
+//           // {
+//           //   rule: "contains",
+//           //   contains: { value: "test1", insensitive: false },
+//           // },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "Array",
+//     },
+//     field: "newarray",
+//     path: "comments.replies.newarray",
+//     type: "Array",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "contains",
+//             contains: { value: "sahil", insensitive: false },
+//           },
+//           {
+//             rule: "contains",
+//             contains: { value: "test1", insensitive: false },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "Date",
+//     },
+//     field: "sahil",
+//     path: "comments.replies.newarray.sahil",
+//     type: "Date",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           // {
+//           //   rule: "contains",
+//           //   contains: { value: "sahil", insensitive: false },
+//           // },
+//           // {
+//           //   rule: "contains",
+//           //   contains: { value: "test1", insensitive: false },
+//           // },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "Date",
+//     },
+//     field: "sahil1",
+//     path: "comments.replies.newarray.sahil1",
+//     type: "Date",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           // {
+//           //   rule: "contains",
+//           //   contains: { value: "sahil", insensitive: false },
+//           // },
+//           // {
+//           //   rule: "contains",
+//           //   contains: { value: "test1", insensitive: false },
+//           // },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     field: "arraytest",
+//     path: "comments.replies.newarray.arraytest",
+//     type: "Alias",
+//     fieldType: "Object",
+//     meta: {
+//       required: false,
+//       interface: "list-m2a",
+//       validations: {
+//         rules: [
+//           // {
+//           //   rule: "contains",
+//           //   contains: { value: "sahil", insensitive: false },
+//           // },
+//           // {
+//           //   rule: "contains",
+//           //   contains: { value: "test1", insensitive: false },
+//           // },
+//         ],
+//       },
+//     },
+//     schema_definition: {
+//       type: "Alias",
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "Number",
+//     },
+//     field: "age",
+//     path: "age",
+//     type: "Number",
+//     fieldType: "Single",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           // {
+//           //   rule: "required",
+//           //   required: { value: true, insensitive: false },
+//           // },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "Number",
+//     },
+//     field: "numbers",
+//     path: "numbers",
+//     type: "Array",
+//     fieldType: "Object",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [
+//           // {
+//           //   rule: "contains",
+//           //   contains: { value: "sahil", insensitive: false },
+//           // },
+//           // {
+//           //   rule: "contains",
+//           //   contains: { value: "test1", insensitive: false },
+//           // },
+//         ],
+//       },
+//     },
+//   },
+
+//   {
+//     schema_definition: {
+//       type: "Alias",
+//     },
+//     field: "many_to_many",
+//     path: "many_to_many",
+//     type: "Alias",
+//     fieldType: "Array",
+//     meta: {
+//       required: false,
+//       validations: {
+//         rules: [],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "Alias",
+//     },
+//     field: "one_to_many",
+//     path: "one_to_many",
+//     type: "Alias",
+//     fieldType: "Array",
+//     meta: {
+//       required: true,
+//       validations: {
+//         rules: [],
+//       },
+//     },
+//   },
+//   {
+//     schema_definition: {
+//       type: "ObjectId",
+//     },
+//     field: "many_to_one",
+//     path: "many_to_one",
+//     type: "ObjectId",
+//     fieldType: "Single",
+//     meta: {
+//       required: true,
+//       nullable: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "allow",
+//             allow: { value: ["123"] },
+//           },
+//         ],
+//       },
+//     },
+//   },
+//   {
+//     field: "testing",
+//     path: "testing",
+//     type: "Object",
+//     fieldType: "Object",
+//     meta: {
+//       required: false,
+//       nullable: true,
+//     },
+//     schema_definition: {
+//       type: "Object",
+//     },
+//   },
+//   {
+//     field: "array_field",
+//     path: "testing.array_field",
+//     type: "Array",
+//     fieldType: "Object",
+//     meta: {
+//       required: false,
+//       nullable: true,
+//       validations: {
+//         rules: [
+//           {
+//             rule: "allow",
+//             allow: { value: ["123"] },
+//           },
+//         ],
+//       },
+//     },
+//     schema_definition: {
+//       type: "String",
+//     },
+//   },
+// ];
+
 const fields = [
   {
-    schema_definition: {
-      type: "String",
-    },
-    field: "username",
-    path: "username",
-    type: "String",
-    fieldType: "Single",
-    meta: {
-      required: false,
-      validations: {
-        rules: [
-          {
-            rule: "contains",
-            contains: { value: "sahil", insensitive: false },
-          },
-          {
-            rule: "contains",
-            contains: { value: "test1", insensitive: false },
-          },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "String",
-    },
-    field: "email",
-    path: "email",
-    type: "String",
-    fieldType: "Single",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          {
-            rule: "contains",
-            contains: { value: "sahil", insensitive: false },
-          },
-          {
-            rule: "contains",
-            contains: { value: "test1", insensitive: false },
-          },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "Object",
-    },
-    field: "address",
-    path: "address",
-    type: "Object",
-    fieldType: "Object",
-    meta: {
-      required: true,
-    },
-  },
-  {
-    schema_definition: {
-      type: "String",
-    },
-    field: "street",
-    path: "address.street",
-    type: "String",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          {
-            rule: "contains",
-            contains: { value: "sahil", insensitive: false },
-          },
-          {
-            rule: "contains",
-            contains: { value: "test1", insensitive: false },
-          },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "String",
-    },
-    field: "city",
-    path: "address.city",
-    type: "String",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          {
-            rule: "contains",
-            contains: { value: "sahil", insensitive: false },
-          },
-          {
-            rule: "contains",
-            contains: { value: "test1", insensitive: false },
-          },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "Alias",
-    },
-    field: "zip",
-    path: "address.zip",
-    type: "Alias",
-    fieldType: "Object",
-    meta: {
-      interface: "list-m2a",
-      required: true,
-      validations: {
-        rules: [
-          {
-            rule: "contains",
-            contains: { value: "sahil", insensitive: false },
-          },
-          {
-            rule: "contains",
-            contains: { value: "test1", insensitive: false },
-          },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "ObjectId",
-    },
-    field: "one_to_many",
-    path: "address.one_to_many",
+    _id: "67e297702ba3876b0c992396",
+    schema_id: "67e297702ba3876b0c99238f",
+    field: "_id",
+    field_type: "Single",
     type: "ObjectId",
-    fieldType: "Object",
+    path: "_id",
+    ref: "",
     meta: {
-      required: true,
-      validations: {
-        rules: [],
-      },
+      is_deletable: false,
+      field: "_id",
+      interface: "none",
+      is_internal: false,
+      is_editable: true,
+      translations: [],
     },
-  },
-
-  {
-    schema_definition: {
-      type: "Array",
-    },
-    field: "comments",
-    path: "comments",
-    type: "Array",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          {
-            rule: "contains",
-            contains: { value: "sahil", insensitive: false },
-          },
-          {
-            rule: "contains",
-            contains: { value: "test1", insensitive: false },
-          },
-        ],
-      },
-    },
+    schema_definition: { name: "_id", type: "ObjectId", is_primary: true, default: null },
+    nox_created_at: "2025-03-25T11:45:52.149Z",
+    nox_updated_at: "2025-03-25T11:45:52.149Z",
+    nox_created_by: "67937390feddb0450d9a1af1",
+    nox_updated_by: "67937390feddb0450d9a1af1",
+    __v: 0,
+    parent_id: null,
   },
   {
-    schema_definition: {
-      type: "String",
-    },
-    field: "author",
-    path: "comments.author",
+    _id: "67e297942ba3876b0c9923ce",
+    schema_id: "67e297702ba3876b0c99238f",
+    field: "question_type",
+    field_type: "Single",
     type: "String",
-    fieldType: "Object",
+    path: "question_type",
     meta: {
-      required: true,
-      validations: {
-        rules: [
-          {
-            rule: "contains",
-            contains: { value: "sahil", insensitive: false },
-          },
-          {
-            rule: "contains",
-            contains: { value: "test1", insensitive: false },
-          },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "String",
-    },
-    field: "text",
-    path: "comments.text",
-    type: "String",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          {
-            rule: "contains",
-            contains: { value: "sahil", insensitive: false },
-          },
-          {
-            rule: "contains",
-            contains: { value: "test1", insensitive: false },
-          },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "Date",
-    },
-    field: "date",
-    path: "comments.date",
-    type: "Date",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          // {
-          //   rule: "contains",
-          //   contains: { value: "sahil", insensitive: false },
-          // },
-          // {
-          //   rule: "contains",
-          //   contains: { value: "test1", insensitive: false },
-          // },
-        ],
-      },
-    },
-  },
-
-  {
-    schema_definition: {
-      type: "Object",
-    },
-    field: "replies",
-    path: "comments.replies",
-    type: "Object",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          {
-            rule: "contains",
-            contains: { value: "sahil", insensitive: false },
-          },
-          {
-            rule: "contains",
-            contains: { value: "test1", insensitive: false },
-          },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "String",
-    },
-    field: "replyAuthor",
-    path: "comments.replies.author",
-    type: "String",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          {
-            rule: "contains",
-            contains: { value: "sahil", insensitive: false },
-          },
-          {
-            rule: "contains",
-            contains: { value: "test1", insensitive: false },
-          },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "String",
-    },
-    field: "replyText",
-    path: "comments.replies.text",
-    type: "String",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          {
-            rule: "contains",
-            contains: { value: "sahil", insensitive: false },
-          },
-          {
-            rule: "contains",
-            contains: { value: "test1", insensitive: false },
-          },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "Date",
-    },
-    field: "replyDate",
-    path: "comments.replies.date",
-    type: "Date",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          // {
-          //   rule: "contains",
-          //   contains: { value: "sahil", insensitive: false },
-          // },
-          // {
-          //   rule: "contains",
-          //   contains: { value: "test1", insensitive: false },
-          // },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "Array",
-    },
-    field: "newarray",
-    path: "comments.replies.newarray",
-    type: "Array",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          {
-            rule: "contains",
-            contains: { value: "sahil", insensitive: false },
-          },
-          {
-            rule: "contains",
-            contains: { value: "test1", insensitive: false },
-          },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "Date",
-    },
-    field: "sahil",
-    path: "comments.replies.newarray.sahil",
-    type: "Date",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          // {
-          //   rule: "contains",
-          //   contains: { value: "sahil", insensitive: false },
-          // },
-          // {
-          //   rule: "contains",
-          //   contains: { value: "test1", insensitive: false },
-          // },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "Date",
-    },
-    field: "sahil1",
-    path: "comments.replies.newarray.sahil1",
-    type: "Date",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          // {
-          //   rule: "contains",
-          //   contains: { value: "sahil", insensitive: false },
-          // },
-          // {
-          //   rule: "contains",
-          //   contains: { value: "test1", insensitive: false },
-          // },
-        ],
-      },
-    },
-  },
-  {
-    field: "arraytest",
-    path: "comments.replies.newarray.arraytest",
-    type: "Alias",
-    fieldType: "Object",
-    meta: {
+      field: "question_type",
+      interface: "input",
+      display_options: [Object],
+      hidden: false,
+      sort: null,
+      width: "full",
       required: false,
-      interface: "list-m2a",
-      validations: {
-        rules: [
-          // {
-          //   rule: "contains",
-          //   contains: { value: "sahil", insensitive: false },
-          // },
-          // {
-          //   rule: "contains",
-          //   contains: { value: "test1", insensitive: false },
-          // },
-        ],
-      },
+      nullable: true,
+      is_internal: false,
+      is_deletable: true,
+      is_editable: true,
+      translations: [],
     },
-    schema_definition: {
-      type: "Alias",
-    },
+    schema_definition: { name: "question_type", type: "String", default: null },
+    nox_created_at: "2025-03-25T11:46:28.405Z",
+    nox_updated_at: "2025-03-25T11:46:28.405Z",
+    nox_created_by: "67937390feddb0450d9a1af1",
+    nox_updated_by: "67937390feddb0450d9a1af1",
+    __v: 0,
+    parent_id: null,
   },
   {
-    schema_definition: {
-      type: "Number",
+    _id: "67e297a32ba3876b0c9923da",
+    schema_id: "67e297702ba3876b0c99238f",
+    field: "questions",
+    field_type: "Object",
+    type: "Array",
+    path: "questions",
+    meta: {
+      field: "questions",
+      interface: "items",
+      display_options: [Object],
+      hidden: false,
+      sort: null,
+      width: "full",
+      required: false,
+      nullable: true,
+      is_internal: false,
+      is_deletable: true,
+      is_editable: true,
+      translations: [],
     },
-    field: "age",
-    path: "age",
+    schema_definition: { name: "questions", type: "Array", default: null },
+    nox_created_at: "2025-03-25T11:46:44.098Z",
+    nox_updated_at: "2025-03-25T11:46:44.098Z",
+    nox_created_by: "67937390feddb0450d9a1af1",
+    nox_updated_by: "67937390feddb0450d9a1af1",
+    __v: 0,
+    parent_id: null,
+  },
+  {
+    _id: "67e297ac2ba3876b0c9923e6",
+    schema_id: "67e297702ba3876b0c99238f",
+    field: "ask",
+    field_type: "Object",
+    type: "String",
+    path: "questions.ask",
+    meta: {
+      field: "ask",
+      interface: "input",
+      display_options: [Object],
+      hidden: false,
+      sort: null,
+      width: "full",
+      required: false,
+      nullable: true,
+      is_internal: false,
+      is_deletable: true,
+      is_editable: true,
+      translations: [],
+    },
+    schema_definition: { name: "ask", type: "String", default: null },
+    nox_created_at: "2025-03-25T11:46:52.861Z",
+    nox_updated_at: "2025-03-25T11:46:52.861Z",
+    nox_created_by: "67937390feddb0450d9a1af1",
+    nox_updated_by: "67937390feddb0450d9a1af1",
+    __v: 0,
+    parent_id: "67e297a32ba3876b0c9923da",
+  },
+  {
+    _id: "67e297be2ba3876b0c9923f3",
+    schema_id: "67e297702ba3876b0c99238f",
+    field: "answers",
+    field_type: "Object",
+    type: "Array",
+    path: "questions.answers",
+    meta: {
+      field: "answers",
+      interface: "items",
+      display_options: [Object],
+      hidden: false,
+      sort: null,
+      width: "full",
+      required: false,
+      nullable: true,
+      is_internal: false,
+      is_deletable: true,
+      is_editable: true,
+      translations: [],
+    },
+    schema_definition: { name: "answers", type: "Array", default: null },
+    nox_created_at: "2025-03-25T11:47:11.119Z",
+    nox_updated_at: "2025-03-25T11:47:11.119Z",
+    nox_created_by: "67937390feddb0450d9a1af1",
+    nox_updated_by: "67937390feddb0450d9a1af1",
+    __v: 0,
+    parent_id: "67e297a32ba3876b0c9923da",
+  },
+  {
+    _id: "67e297c92ba3876b0c992400",
+    schema_id: "67e297702ba3876b0c99238f",
+    field: "answer",
+    field_type: "Object",
+    type: "String",
+    path: "questions.answers.answer",
+    meta: {
+      field: "answer",
+      interface: "input",
+      display_options: [Object],
+      hidden: false,
+      sort: null,
+      width: "full",
+      required: false,
+      nullable: true,
+      is_internal: false,
+      is_deletable: true,
+      is_editable: true,
+      translations: [],
+    },
+    schema_definition: { name: "answer", type: "String", default: null },
+    nox_created_at: "2025-03-25T11:47:21.337Z",
+    nox_updated_at: "2025-03-25T11:47:21.337Z",
+    nox_created_by: "67937390feddb0450d9a1af1",
+    nox_updated_by: "67937390feddb0450d9a1af1",
+    __v: 0,
+    parent_id: "67e297be2ba3876b0c9923f3",
+  },
+  {
+    _id: "67e297d22ba3876b0c99240d",
+    schema_id: "67e297702ba3876b0c99238f",
+    field: "score",
+    field_type: "Object",
     type: "Number",
-    fieldType: "Single",
+    path: "questions.answers.score",
     meta: {
-      required: true,
-      validations: {
-        rules: [
-          // {
-          //   rule: "required",
-          //   required: { value: true, insensitive: false },
-          // },
-        ],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "Number",
-    },
-    field: "numbers",
-    path: "numbers",
-    type: "Array",
-    fieldType: "Object",
-    meta: {
-      required: true,
-      validations: {
-        rules: [
-          // {
-          //   rule: "contains",
-          //   contains: { value: "sahil", insensitive: false },
-          // },
-          // {
-          //   rule: "contains",
-          //   contains: { value: "test1", insensitive: false },
-          // },
-        ],
-      },
-    },
-  },
-
-  {
-    schema_definition: {
-      type: "Alias",
-    },
-    field: "many_to_many",
-    path: "many_to_many",
-    type: "Alias",
-    fieldType: "Array",
-    meta: {
-      required: false,
-      validations: {
-        rules: [],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "Alias",
-    },
-    field: "one_to_many",
-    path: "one_to_many",
-    type: "Alias",
-    fieldType: "Array",
-    meta: {
-      required: true,
-      validations: {
-        rules: [],
-      },
-    },
-  },
-  {
-    schema_definition: {
-      type: "ObjectId",
-    },
-    field: "many_to_one",
-    path: "many_to_one",
-    type: "ObjectId",
-    fieldType: "Single",
-    meta: {
-      required: true,
-      nullable: true,
-      validations: {
-        rules: [
-          {
-            rule: "allow",
-            allow: { value: ["123"] },
-          },
-        ],
-      },
-    },
-  },
-  {
-    field: "testing",
-    path: "testing",
-    type: "Object",
-    fieldType: "Object",
-    meta: {
+      field: "score",
+      interface: "input",
+      display_options: [Object],
+      hidden: false,
+      sort: null,
+      width: "full",
       required: false,
       nullable: true,
+      is_internal: false,
+      is_deletable: true,
+      is_editable: true,
+      translations: [],
     },
-    schema_definition: {
-      type: "Object",
-    },
+    schema_definition: { name: "score", type: "Number", default: null },
+    nox_created_at: "2025-03-25T11:47:30.527Z",
+    nox_updated_at: "2025-03-25T11:47:30.527Z",
+    nox_created_by: "67937390feddb0450d9a1af1",
+    nox_updated_by: "67937390feddb0450d9a1af1",
+    __v: 0,
+    parent_id: "67e297be2ba3876b0c9923f3",
   },
   {
-    field: "array_field",
-    path: "testing.array_field",
-    type: "Array",
-    fieldType: "Object",
+    _id: "67e297e12ba3876b0c99241a",
+    schema_id: "67e297702ba3876b0c99238f",
+    field: "criticism",
+    field_type: "Object",
+    type: "Boolean",
+    path: "questions.answers.criticism",
     meta: {
+      field: "criticism",
+      interface: "toggle",
+      display_options: [Object],
+      hidden: false,
+      sort: null,
+      width: "full",
       required: false,
       nullable: true,
-      validations: {
-        rules: [
-          {
-            rule: "allow",
-            allow: { value: ["123"] },
-          },
-        ],
-      },
+      is_internal: false,
+      is_deletable: true,
+      is_editable: true,
+      translations: [],
     },
-    schema_definition: {
-      type: "String",
-    },
+    schema_definition: { name: "criticism", type: "Boolean", default: null },
+    nox_created_at: "2025-03-25T11:47:46.047Z",
+    nox_updated_at: "2025-03-25T11:47:46.047Z",
+    nox_created_by: "67937390feddb0450d9a1af1",
+    nox_updated_by: "67937390feddb0450d9a1af1",
+    __v: 0,
+    parent_id: "67e297be2ba3876b0c9923f3",
   },
 ];
 
@@ -735,9 +965,8 @@ const objectId = (value, helpers) => {
   return value;
 };
 
-function convertFieldsToJoiFormat(fields) {
-  const convertedData = {};
-  let extraValidations = {
+const extraValidationsByInterface = {
+  "list-m2a": {
     type: "object",
     keys: {
       sort: {
@@ -778,7 +1007,11 @@ function convertFieldsToJoiFormat(fields) {
         },
       },
     },
-  };
+  },
+};
+
+function convertFieldsToJoiFormat(fields) {
+  const convertedData = {};
 
   function addToConvertedData(currentLevel, pathParts, field, validationRules) {
     pathParts.forEach((part, index) => {
@@ -786,15 +1019,15 @@ function convertFieldsToJoiFormat(fields) {
 
       if (!existingField) {
         let validationData = {};
-        let type = field.schema_definition.type;
+        let type = field.schema_definition.type?.toLowerCase();
         let itsAliasType = {};
 
-        if (type === "Alias") {
+        if (type === "alias") {
           type = "array";
-          if (field.meta.interface === "list-m2a") {
+          if (field.meta?.interface === "list-m2a") {
             itsAliasType = {
               items: {
-                ...extraValidations
+                ...extraValidationsByInterface["list-m2a"],
               },
             };
           } else {
@@ -807,13 +1040,17 @@ function convertFieldsToJoiFormat(fields) {
               },
             };
           }
-        } else if (type === "ObjectId") {
+        } else if (type === "objectid") {
           type = "string";
-        } else if (field.type === "Array" && field.fieldType === "Object" && type !== field.type) {
+        } else if (
+          field.type?.toLowerCase() === "array" &&
+          field.field_type?.toLowerCase() === "object" &&
+          type !== field.type?.toLowerCase()
+        ) {
           type = "array";
           itsAliasType = {
             items: {
-              type: field.schema_definition.type,
+              type: field.schema_definition.type?.toLowerCase(),
               validations: {
                 rules: [...validationRules],
               },
@@ -821,7 +1058,7 @@ function convertFieldsToJoiFormat(fields) {
           };
         }
 
-        if (type?.toLowerCase() !== "object" && type?.toLowerCase() !== "array") {
+        if (type !== "object" && type !== "array") {
           validationData = {
             validations: {
               rules: [...validationRules],
@@ -861,6 +1098,8 @@ function convertFieldsToJoiFormat(fields) {
   }
 
   fields.forEach((field) => {
+    let type = field.type?.toLowerCase();
+    let isTimeOnly = false;
     let validationRules = [
       {
         rule: "required",
@@ -868,16 +1107,26 @@ function convertFieldsToJoiFormat(fields) {
       },
     ];
 
-    if (field?.meta?.nullable) {
+    if (!field?.meta?.required && field?.meta?.nullable) {
       validationRules.push({
         rule: "allow",
         allow: { value: ["", null] },
       });
     }
 
-    if (field.meta.interface === "list-m2a") {
+    if (["date", "time"].includes(type)) {
+      isTimeOnly = type === "time";
+      type = "string";
     }
-    if (field.type === "Alias" || field.type === "ObjectId") {
+
+    if (["datetime", "timestamp"].includes(type)) {
+      type = "date";
+      validationRules.push({
+        rule: "date",
+      });
+    }
+
+    if (type === "alias" || type === "objectid") {
       type = "string";
       validationRules.push({
         rule: "objectid",
@@ -885,30 +1134,52 @@ function convertFieldsToJoiFormat(fields) {
       });
     }
 
+    if (field?.meta?.interface === "translations") {
+      type = "any";
+      validationRules = [];
+    }
+
+    if (
+      field?.type?.toLowerCase() === "array" &&
+      !["array", "alias"].includes(field?.schema_definition?.type?.toLowerCase())
+    ) {
+      type = field?.schema_definition?.type?.toLowerCase();
+    }
+
     validationRules.push(...(field?.meta?.validations?.rules || []));
 
-    if (field.fieldType === "Single") {
+    if (field?.meta?.hidden) {
+      validationRules = [];
+    }
+
+    if (field.field_type === "Single") {
       convertedData[field.field] = {
-        type: field.schema_definition.type,
+        interface: field?.meta?.interface,
+        type: type,
+        isTimeOnly,
         validations: {
           rules: [...validationRules],
         },
       };
-    } else if (field.fieldType === "Object") {
+    } else if (field.field_type === "Object" && field?.meta?.interface !== "translations") {
       addToConvertedData(convertedData, field.path.split("."), field, validationRules);
-    } else if (field.fieldType === "Array") {
-      if (field.meta.interface === "list-m2a") {
+    } else if (field.field_type === "Array") {
+      if (field.meta?.interface === "list-m2a") {
         convertedData[field.field] = {
-          type: field.fieldType?.toLowerCase(),
+          interface: field?.meta?.interface,
+          type: field.field_type?.toLowerCase(),
+          isTimeOnly,
           items: {
-            ...extraValidations,
+            ...extraValidationsByInterface["list-m2a"],
           },
         };
       } else {
         convertedData[field.field] = {
-          type: field.fieldType?.toLowerCase(),
+          interface: field?.meta?.interface,
+          type: field.field_type?.toLowerCase(),
+          isTimeOnly,
           items: {
-            type: field.schema_definition.type,
+            type: type,
             validations: {
               rules: [...validationRules],
             },
