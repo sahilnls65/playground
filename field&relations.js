@@ -1,6 +1,136 @@
 const data = {
   fields: [
     {
+      _id: "681dff91fbcbcc0e13e8159f",
+      schema_id: "681dff90fbcbcc0e13e8159b",
+      field: "_id",
+      field_type: "Single",
+      type: "ObjectId",
+      path: "_id",
+      ref: "",
+      meta: {
+        is_deletable: false,
+        field: "_id",
+        interface: "none",
+        hidden: true,
+        is_internal: false,
+        is_editable: true,
+        translations: [],
+      },
+      schema_definition: {
+        name: "_id",
+        type: "ObjectId",
+        is_primary: true,
+        default: null,
+      },
+      nox_created_at: "2025-05-09T13:13:52.497Z",
+      nox_updated_at: "2025-05-09T13:13:52.497Z",
+      nox_created_by: "67937390feddb0450d9a1af1",
+      nox_updated_by: "67937390feddb0450d9a1af1",
+      __v: 0,
+    },
+    {
+      _id: "681dff90fbcbcc0e13e81595",
+      schema_id: "681dff90fbcbcc0e13e8159b",
+      field: "products_id",
+      field_type: "Single",
+      type: "ObjectId",
+      path: "products_id",
+      ref: "products",
+      meta: {
+        is_deletable: false,
+        field: "products_id",
+        interface: "list-m2o",
+        hidden: false,
+        is_internal: false,
+        is_editable: true,
+        translations: [],
+      },
+      schema_definition: {
+        name: "products_id",
+        type: "ObjectId",
+        default: null,
+        foreign_key_column: "_id",
+        foreign_key_table: "products",
+        foreign_key_table_id: "6800a64eca96aac2027cb2bd",
+      },
+      nox_created_at: "2025-05-09T13:13:52.497Z",
+      nox_updated_at: "2025-05-09T13:13:52.497Z",
+      nox_created_by: "67937390feddb0450d9a1af1",
+      nox_updated_by: "67937390feddb0450d9a1af1",
+      __v: 0,
+    },
+    {
+      _id: "681dff90fbcbcc0e13e81594",
+      schema_id: "681dff90fbcbcc0e13e8159b",
+      field: "rel_id",
+      field_type: "Single",
+      type: "ObjectId",
+      path: "rel_id",
+      ref: "rel",
+      meta: {
+        is_deletable: false,
+        field: "rel_id",
+        interface: "list-m2o",
+        hidden: false,
+        is_internal: false,
+        is_editable: true,
+        translations: [],
+      },
+      schema_definition: {
+        name: "rel_id",
+        type: "ObjectId",
+        default: null,
+        foreign_key_column: "_id",
+        foreign_key_table: "rel",
+        foreign_key_table_id: "68149f63bcaf1dc4eb76a5fd",
+      },
+      nox_created_at: "2025-05-09T13:13:52.497Z",
+      nox_updated_at: "2025-05-09T13:13:52.497Z",
+      nox_created_by: "67937390feddb0450d9a1af1",
+      nox_updated_by: "67937390feddb0450d9a1af1",
+      __v: 0,
+    },
+    {
+      _id: "681dff8ffbcbcc0e13e81592",
+      schema_id: "68149f63bcaf1dc4eb76a5fd",
+      field: "m2m_product",
+      field_type: "Array",
+      type: "Alias",
+      path: "m2m_product",
+      parent_id: null,
+      meta: {
+        field: "m2m_product",
+        interface: "list-m2m",
+        options: {
+          create_new: true,
+          add_existing: true,
+        },
+        display_options: {
+          template: "",
+        },
+        hidden: false,
+        sort: 6,
+        width: "full",
+        required: false,
+        nullable: true,
+        is_internal: false,
+        is_deletable: true,
+        is_editable: true,
+        translations: [],
+      },
+      schema_definition: {
+        name: "m2m_product",
+        type: "Alias",
+        default: null,
+      },
+      nox_created_at: "2025-05-09T13:13:52.039Z",
+      nox_updated_at: "2025-05-09T13:13:52.039Z",
+      nox_created_by: "67937390feddb0450d9a1af1",
+      nox_updated_by: "67937390feddb0450d9a1af1",
+      __v: 0,
+    },
+    {
       _id: "6819c51315e715bae8792f5a",
       schema_id: "6819c51215e715bae8792f56",
       field: "_id",
@@ -9145,6 +9275,36 @@ const data = {
       nox_created_at: "2025-05-06T08:15:13.584Z",
       nox_updated_at: "2025-05-06T08:15:13.584Z",
     },
+    {
+      _id: "681dff94fbcbcc0e13e815c1",
+      many_collection: "rel_products",
+      many_collection_id: "681dff90fbcbcc0e13e8159b",
+      many_field: "rel_id",
+      many_field_id: "681dff90fbcbcc0e13e81594",
+      one_collection: "rel",
+      one_collection_id: "68149f63bcaf1dc4eb76a5fd",
+      one_field: "m2m_product",
+      one_field_id: "681dff8ffbcbcc0e13e81592",
+      junction_field: "products_id",
+      nox_created_by: "67937390feddb0450d9a1af1",
+      nox_updated_by: "67937390feddb0450d9a1af1",
+      nox_created_at: "2025-05-09T13:13:52.039Z",
+      nox_updated_at: "2025-05-09T13:13:52.039Z",
+    },
+    {
+      _id: "681dff94fbcbcc0e13e815c2",
+      many_collection: "rel_products",
+      many_collection_id: "681dff90fbcbcc0e13e8159b",
+      many_field: "products_id",
+      many_field_id: "681dff90fbcbcc0e13e81595",
+      one_collection: "products",
+      one_collection_id: "6800a64eca96aac2027cb2bd",
+      junction_field: "rel_id",
+      nox_created_by: "67937390feddb0450d9a1af1",
+      nox_updated_by: "67937390feddb0450d9a1af1",
+      nox_created_at: "2025-05-09T13:13:52.039Z",
+      nox_updated_at: "2025-05-09T13:13:52.039Z",
+    },
   ],
 };
 
@@ -9214,295 +9374,6 @@ const RELATIONAL_INTERFACES = [
   "list-m2a",
   "translations",
 ];
-
-const getPopulatedRelationalFields = (
-  relationalFields,
-  fields,
-  level,
-  currentLevel = 1,
-  result = {}
-) => {
-  if (level === 0 || relationalFields.length === 0) return result;
-
-  if (!result[currentLevel]) {
-    result[currentLevel] = [];
-  }
-
-  relationalFields.forEach((rf) => {
-    const isM2a = rf.meta.interface === "list-m2a";
-    const schemaId = isM2a
-      ? rf.relation?.relational?.one_allowed_collections_id
-      : [rf?.relation?.foreign_collection_id];
-
-    const relatedFields = fields
-      .filter((f) => schemaId.includes(f?.schema_id))
-      .map((item) => {
-        const myRelations = findRelations({
-          collection: item?.schema_id,
-          field: item?._id,
-          interface: item.meta.interface,
-          data: data.relations,
-          findJunction: item?.meta?.interface === "list-m2a",
-        });
-
-        let relativePath = rf.relativePath;
-        if (isM2a) {
-          const findIndex = rf?.relation?.relational?.one_allowed_collections_id?.findIndex(
-            (id) => id === item?.schema_id
-          );
-
-          // TODO
-          relativePath = `${rf.relativePath}.${rf?.relation?.relational?.one_allowed_collections[findIndex]}`;
-        }
-        const returnData = {
-          ...item,
-          relativePath: `${relativePath}.${item.path}`,
-          relation: myRelations,
-        };
-        result[currentLevel].push(returnData);
-        return returnData;
-      });
-
-    const nestedRelationalFields = relatedFields.filter((f) =>
-      RELATIONAL_INTERFACES.includes(f.meta?.interface)
-    );
-
-    getPopulatedRelationalFields(
-      nestedRelationalFields,
-      fields,
-      level - 1,
-      currentLevel + 1,
-      result
-    );
-  });
-
-  return result;
-};
-
-function getFieldsBySchemaId({ fields, schemaId, populated, level = 3 }) {
-  try {
-    let fieldDoc = {};
-    let relationalFields = [];
-    const mainTableFields = fields
-      .filter((field) => field.schema_id === schemaId)
-      .map((field) => {
-        if (RELATIONAL_INTERFACES.includes(field.meta?.interface)) {
-          const myRelations = findRelations({
-            collection: field?.schema_id,
-            field: field?._id,
-            interface: field?.meta?.interface,
-            data: data.relations,
-            findJunction: field?.meta?.interface === "list-m2a",
-          });
-          const returnData = {
-            ...field,
-            relativePath: field.path,
-            relation: myRelations,
-          };
-          relationalFields.push(returnData);
-          return returnData;
-        } else {
-          return { ...field, relativePath: field.path };
-        }
-      });
-
-    if (populated) {
-      fieldDoc = getPopulatedRelationalFields(relationalFields, fields, level);
-    }
-
-    return { ...fieldDoc, 0: mainTableFields };
-  } catch (error) {
-    return [];
-  }
-}
-
-const getFieldsForPaths = (allLevelFields, filterPaths = []) => {
-  const allFields = Object.values(allLevelFields).flat();
-  const result = {};
-
-  for (const path of filterPaths) {
-    const parts = path.replace("item:", "").replace("language:", "").split(".");
-    let currentPath = "";
-    const pathFields = [];
-
-    for (const part of parts) {
-      currentPath = currentPath ? `${currentPath}.${part}` : part;
-      const match = allFields.find((f) => f.relativePath === currentPath);
-      if (match) pathFields.push(match);
-    }
-
-    result[path] = pathFields;
-  }
-
-  return result;
-};
-
-const paths = getFieldsBySchemaId({
-  fields: data.fields,
-  schemaId: "68149f63bcaf1dc4eb76a5fd",
-  populated: true,
-});
-
-const filterPaths = [
-  "name",
-  "m2m",
-  "m2m.card_id.name",
-  "m2m.card_id.name2",
-  "o2m.name",
-  "o2m.name2",
-  "m2o",
-  "m2a",
-  "m2a.item:card.name",
-  "m2a.item:products.creator.m2m.hello_collection_id.name",
-  "m2a.item:products.o2m.name",
-  "m2a.item:products.translations",
-  "m2a.item:products.translations.language:6813658c2898c90713cf19d0",
-];
-
-const pathWiseFields = getFieldsForPaths(paths, filterPaths);
-
-function buildAggregationPipeline(schemaMap) {
-  const pipeline = [];
-  const usedLookups = new Map();
-  const projection = { _id: 1 };
-  const operator = new Map();
-
-  for (const [path, fields] of Object.entries(schemaMap)) {
-    let index = 0;
-    let lastUnwindKey = "";
-    let outerFirst = true;
-
-    for (const field of fields) {
-      index++;
-      const interfaceType = field.meta?.interface;
-
-      const isRelationalField =
-        RELATIONAL_INTERFACES.includes(interfaceType) ||
-        (field?.type === "ObjectId" && field.path !== "_id");
-
-      lastUnwindKey = lastUnwindKey ? `${lastUnwindKey}.${field.path}` : field.path;
-
-      if (isRelationalField) {
-        let localField = "_id";
-        let foreignField = "";
-        const foreignTable = field?.relation?.foreign_collection;
-        let unwindKey = foreignTable + field._id;
-        let tempUnwindPostFix = "";
-        let innerPipeline = { pipeline: [] };
-
-        switch (interfaceType) {
-          case "list-o2m":
-            localField = lastUnwindKey.replace(field.path, "") + "_id";
-            foreignField = field?.relation?.main_table?.many_field;
-            break;
-          case "list-m2m":
-          case "files":
-            localField = lastUnwindKey.replace(field.path, "") + "_id";
-            foreignField = field?.relation?.main_table?.many_field;
-            break;
-          case "list-m2o":
-          case "file":
-          case "file-image":
-            localField = lastUnwindKey;
-            foreignField = "_id";
-            operator.set(unwindKey, "$first");
-            break;
-          case "list-m2a":
-            if (path.includes("item:")) {
-              const collectionName = path.split("item:")[1].split(".")[0];
-              tempUnwindPostFix = `.${collectionName}`;
-            }
-            localField = lastUnwindKey.replace(field.path, "") + "_id";
-            foreignField = field?.relation?.main_table?.many_field;
-            field?.relation?.relational?.one_allowed_collections?.forEach((acc) => {
-              innerPipeline.pipeline.push({
-                $lookup: {
-                  from: acc,
-                  localField: field?.relation?.relational?.many_field,
-                  foreignField: "_id",
-                  as: acc,
-                },
-              });
-              innerPipeline.pipeline.push({
-                $unwind: {
-                  path: `$${acc}`,
-                  preserveNullAndEmptyArrays: true,
-                },
-              });
-            });
-            break;
-          case "translations":
-            localField = lastUnwindKey.replace(field.path, "") + "_id";
-            foreignField = field?.relation?.main_table?.many_field;
-            operator.set(unwindKey, "$first");
-            if (path.includes("language:")) {
-              const languageId = path.split("language:")?.[1]?.split(".")?.[0];
-              // if (isValidObjectId(field?.language_id)) {
-              innerPipeline.pipeline.push({
-                $match: {
-                  [field?.relation?.main_table?.junction_field]: languageId,
-                },
-              });
-              // }
-            }
-            break;
-          default:
-            if (field.type === "ObjectId") {
-              foreignField = "_id";
-            }
-            break;
-        }
-
-        const lookupKey = `${foreignTable}_${localField}_${foreignField}`;
-
-        const lastSpitedPath = lastUnwindKey?.split("-")[0];
-
-        if (usedLookups.has(lookupKey)) {
-          outerFirst = false;
-          const checkOperator = operator.get(lastSpitedPath);
-          if (checkOperator) {
-            operator.set(unwindKey, checkOperator);
-          }
-        }
-
-        if (!usedLookups.has(lookupKey)) {
-          usedLookups.set(lookupKey, field.path);
-
-          pipeline.push({
-            $lookup: {
-              from: foreignTable,
-              localField,
-              foreignField,
-              ...innerPipeline,
-              as: unwindKey,
-            },
-          });
-
-          if (outerFirst) {
-            outerFirst = false;
-            if (["list-m2o", "file", "file-image", "translations"].includes(interfaceType)) {
-              operator.set(unwindKey, "$first");
-            }
-          }
-        }
-        lastUnwindKey = unwindKey + tempUnwindPostFix;
-      }
-
-      if (index === fields?.length) {
-        projection[`${path.replaceAll(".", "_")}`] = operator.get(lastUnwindKey)
-          ? { [operator.get(lastUnwindKey)]: `$${lastUnwindKey}` }
-          : `$${lastUnwindKey}`;
-      }
-    }
-  }
-
-  return [...pipeline, { $project: projection }];
-}
-
-const pipeline = buildAggregationPipeline(pathWiseFields);
-console.log(JSON.stringify(pipeline, null, 2));
-console.log("paths", paths);
-console.log(pathWiseFields);
 
 const getPopulatedRelationalFieldsV2 = (relationalFields, fields, level, visited = new Set()) => {
   try {
@@ -9576,7 +9447,7 @@ const getPopulatedRelationalFieldsV2 = (relationalFields, fields, level, visited
 
             if (nestedChildren?.length) {
               fieldNode.children = nestedChildren;
-              visited.add(fullPath);
+              // visited.add(fullPath);
             }
           }
 
@@ -9656,3 +9527,11 @@ function getFieldsBySchemaIdV2({ fields, schemaId, populated, level = 3 }) {
     return [];
   }
 }
+
+console.log(
+  getFieldsBySchemaIdV2({
+    fields: data.fields,
+    schemaId: "68149f63bcaf1dc4eb76a5fd",
+    populated: true,
+  })
+);
