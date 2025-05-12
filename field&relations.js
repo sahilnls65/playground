@@ -9445,9 +9445,11 @@ const getPopulatedRelationalFieldsV2 = (relationalFields, fields, level, visited
               visited
             );
 
-            if (nestedChildren?.length) {
+            const isSameNode = nestedChildren?.find((node) => node.key === fullPath);
+            if (isSameNode) {
+              fieldNode.children = isSameNode?.children || [];
+            } else {
               fieldNode.children = nestedChildren;
-              // visited.add(fullPath);
             }
           }
 
