@@ -88,3 +88,6 @@ for branch in $(git branch | sed 's/..//'); do
   fi
 done
 
+sudo usermod -aG docker $USER
+newgrp docker
+
