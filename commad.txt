@@ -91,3 +91,28 @@ done
 sudo usermod -aG docker $USER
 newgrp docker
 
+
+
+cd ~/Downloads
+
+chmod +x Cursor-1.1.3-x86_64.AppImage
+
+sudo apt update
+sudo apt install libfuse2
+
+sudo mv ~/Downloads/Cursor-1.1.3-x86_64.AppImage /opt/cursor.appimage
+
+sudo mv ~/Downloads/cursor.png /opt/cursor.png
+
+sudo vim /usr/share/applications/cursor.desktop
+[Desktop Entry]
+Name=Cursor AI IDE
+Exec=/opt/cursor.appimage --no-sandbox %U
+Terminal=false
+Type=Application
+Icon=/opt/cursor.png
+StartupWMClass=Cursor
+Comment=Cursor is an AI-first coding environment.
+Categories=Development;
+
+sudo chmod +x /usr/share/applications/cursor.desktop
