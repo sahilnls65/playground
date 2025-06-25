@@ -116,3 +116,22 @@ Comment=Cursor is an AI-first coding environment.
 Categories=Development;
 
 sudo chmod +x /usr/share/applications/cursor.desktop
+
+
+tar file install
+tar -xzf studio-3t-community-edition-linux-x64.tar.gz
+sudo mv studio-3t-YYYY.MM.DD /opt/studio-3t
+cd /opt/studio-3t
+
+sudo vim /usr/share/applications/studio-3t.desktop
+[Desktop Entry]
+Name=Studio 3T
+Comment=MongoDB GUI
+Exec=/opt/studio-3t/studio-3t
+Icon=/opt/studio-3t/icons/studio-3t.png  # Adjust this path if your icon is elsewhere
+Terminal=false
+Type=Application
+Categories=Development;Database;
+
+chmod +x ~/.local/share/applications/studio-3t.desktop
+
