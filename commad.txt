@@ -62,7 +62,7 @@ const dbData = db
 });
 
 mongorestore --uri="mongodb+srv://<username>:<password>@<cluster-url>/dbname" --db=test folder/*
-mongodump --uri="mongodb+srv://<username>:<password>@<cluster-url>/dbname" --out=/path/to/backup
+mongodump --uri="mongodb+srv://<username>:<password>@<cluster-url>/dbname" --out=/path/to/backup  --excludeCollection xyz
 
 sudo chown -R $USER /folder
 
