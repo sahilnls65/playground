@@ -145,3 +145,42 @@ db.adminCommand({ listDatabases: 1, nameOnly: true }).databases.forEach(function
         print("Collection 'nox_presets' dropped in " + dbs.name);
     }
 });
+
+
+db.adminCommand({ listDatabases: 1, nameOnly: true }).databases.forEach(function (dbs) {
+  if (/_Acceptance/.test(dbs.name)) {
+    print("Processing database: " + dbs.name);
+    var currentDb = db.getSiblingDB(dbs.name);
+    var collection = currentDb.getCollection("nox_presets");
+
+    var deleteResult = collection.deleteMany({ userId: { $exists: false } });
+    print(`Deleted ${deleteResult.deletedCount} docs without userId in ${dbs.name}`);
+
+    var cursor = collection.find({
+      userId: { $exists: true },
+      "layout_query.tabular.fields.field_name": { $exists: true },
+    });
+
+    cursor.forEach(function (doc) {
+      try {
+        let fieldNamesOnly = [];
+        const fields = (((doc || {}).layout_query || {}).tabular || {}).fields || [];
+
+        fields.forEach((field) => {
+          if (field && typeof field === "object" && "field_name" in field) {
+            fieldNamesOnly.push(field.field_name);
+          }
+        });
+
+        collection.updateOne(
+          { _id: doc._id },
+          { $set: { "layout_query.tabular.fields": fieldNamesOnly } }
+        );
+      } catch (e) {
+        print(`Error updating doc with _id=${doc._id}: ${e}`);
+      }
+    });
+
+    print("Finished processing: " + dbs.name);
+  }
+});
