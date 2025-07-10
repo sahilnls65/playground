@@ -135,3 +135,13 @@ Categories=Development;Database;
 
 chmod +x /usr/share/applications/studio-3t.desktop
 
+
+
+db.adminCommand({ listDatabases: 1, nameOnly: true }).databases.forEach(function(dbs) {
+    if (/_Development/.test(dbs.name)) {
+        print("Found database: " + dbs.name);
+        db = db.getSiblingDB(dbs.name);
+        db.nox_presets.drop();
+        print("Collection 'nox_presets' dropped in " + dbs.name);
+    }
+});
