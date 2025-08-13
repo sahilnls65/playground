@@ -182,6 +182,14 @@ db.adminCommand({ listDatabases: 1, nameOnly: true }).databases.forEach(function
     });
 
 ====================================================================================================================================================================================
+# Get collection which dose not have data
+db.getCollectionNames().forEach(function(collectionName) {
+  if (db.getCollection(collectionName).countDocuments({}) === 0) {
+    print(collectionName);
+  }
+});
+
+====================================================================================================================================================================================
 #!/bin/bash
 
 # Script to perform mongodump while excluding specified collections.
