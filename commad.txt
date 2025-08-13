@@ -184,68 +184,43 @@ db.adminCommand({ listDatabases: 1, nameOnly: true }).databases.forEach(function
 ====================================================================================================================================================================================
 #!/bin/bash
 
-# ==============================================================================
-# This script performs a mongodump, excluding a list of specified collections.
-#
-# How to use:
-# 1. Update the 'DATABASE_NAME' variable with your database name.
-# 2. Add the names of the collections you want to exclude to the
-#    'EXCLUDE_COLLECTIONS' array.
-# 3. Save the file (e.g., as mongodump_exclude.sh).
-# 4. Make the script executable: chmod +x mongodump_exclude.sh
-# 5. Run the script: ./mongodump_exclude.sh
-# ==============================================================================
+# Script to perform mongodump while excluding specified collections.
 
-# --- Configuration ---
-# The name of the database you want to back up.
-DATABASE_NAME="my_database"
-DATABASE_URI="mongodb://localhost:27017/${DATABASE_NAME}"
+DATABASE_NAME="my_database" # Name of the database to back up
+DATABASE_URI="mongodb://localhost:27017/${DATABASE_NAME}" # MongoDB URI
 
-# An array of collection names to exclude from the dump.
-# Add or remove collections from this list as needed.
-EXCLUDE_COLLECTIONS=(
+EXCLUDE_COLLECTIONS=( # List of collections to exclude from the dump
     "collection_to_exclude_1"
     "collection_to_exclude_2"
     "collection_to_exclude_3"
     "another_collection_to_exclude"
 )
 
-# Optional: Specify the output directory for the dump.
-# If not specified, it will create a 'mongo_backup_<date>' directory in the current location.
-OUTPUT_DIRECTORY="mongo_backup_$(date +%F_%H-%M-%S)"
+OUTPUT_DIRECTORY="mongo_backup_$(date +%F_%H-%M-%S)" # Output directory for the backup
 
-# --- Script Logic ---
-
-# Check if mongodump is installed
-if ! command -v mongodump >/dev/null 2>&1; then
+if ! command -v mongodump >/dev/null 2>&1; then # Check if mongodump is installed
     echo "Error: mongodump is not installed or not in your PATH."
     exit 1
 fi
 
-# Check if DATABASE_NAME is set
-if [ -z "$DATABASE_NAME" ]; then
+if [ -z "$DATABASE_NAME" ]; then # Check if database name is set
     echo "Error: DATABASE_NAME is not set."
     exit 1
 fi
 
-# Build the mongodump command
-DUMP_COMMAND=(mongodump --uri="${DATABASE_URI}" --db="${DATABASE_NAME}" --out="${OUTPUT_DIRECTORY}")
+DUMP_COMMAND=(mongodump --uri="${DATABASE_URI}" --db="${DATABASE_NAME}" --out="${OUTPUT_DIRECTORY}") # Build mongodump command
 
-# Append --excludeCollection for each collection to exclude
-for collection in "${EXCLUDE_COLLECTIONS[@]}"; do
+for collection in "${EXCLUDE_COLLECTIONS[@]}"; do # Add excludeCollection options
     DUMP_COMMAND+=(--excludeCollection="${collection}")
 done
 
-# Echo the final command to the console for verification.
-echo "Executing the following command:"
+echo "Executing the following command:" # Show the command to be executed
 echo "${DUMP_COMMAND[@]}"
 echo "----------------------------------------"
 
-# Execute the constructed command.
-"${DUMP_COMMAND[@]}"
+"${DUMP_COMMAND[@]}" # Run the mongodump command
 
-# --- Post-Execution ---
-if [ $? -eq 0 ]; then
+if [ $? -eq 0 ]; then # Check if mongodump succeeded
     echo "----------------------------------------"
     echo "mongodump completed successfully!"
     echo "Backup files are located in: ${OUTPUT_DIRECTORY}"
@@ -253,30 +228,8 @@ else
     echo "----------------------------------------"
     echo "Error: mongodump failed. Please check the output above for details."
 fi
-
-
-    print("Finished processing: " + dbs.name);
-  }
-});
 ====================================================================================================================================================================================
 #!/bin/bash
-
-# ==============================================================================
-# This script performs a flexible mongorestore operation.
-# It can either restore a selected list of collections OR restore all
-# collections EXCEPT for a specified list of excluded collections.
-#
-# How to use:
-# 1. Update the 'DATABASE_NAME' and 'INPUT_DUMP_PATH' variables.
-# 2. Populate EITHER the 'INCLUDE_COLLECTIONS' array OR the 'EXCLUDE_COLLECTIONS' array.
-#    DO NOT populate both at the same time. The script will exit with an error if you do.
-# 3. Save the file (e.g., as mongorestore.sh).
-# 4. Make the script executable: chmod +x mongorestore.sh
-# 5. Run the script: ./mongorestore.sh
-#
-# Note: The '--drop' flag is included by default to drop existing collections
-#       before restoring. You can remove it if you prefer to merge data.
-# ==============================================================================
 
 # --- Configuration ---
 DATABASE_NAME="my_database"
