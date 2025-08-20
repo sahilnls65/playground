@@ -180,6 +180,8 @@ db.adminCommand({ listDatabases: 1, nameOnly: true }).databases.forEach(function
         print(`Error updating doc with _id=${doc._id}: ${e}`);
       }
     });
+  }
+});
 
 ====================================================================================================================================================================================
 # Get collection which dose not have data
