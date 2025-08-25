@@ -1,5 +1,5 @@
 git fetch --prune
-
+====================================================================================================================================================================================
 const dbData = db
 .createUser({
   user: "user",
@@ -19,7 +19,7 @@ const dbData = db
   console.log("err++++", err);
 });
 
-
+====================================================================================================================================================================================
 # Drop database user
 [
   "dhairya.chavda_Development",
@@ -60,14 +60,14 @@ const dbData = db
   print("dropping db " + database);
   db.dropDatabase();
 });
-
+====================================================================================================================================================================================
 mongorestore --uri="mongodb+srv://<username>:<password>@<cluster-url>/dbname" --db=test folder/*
 mongodump --uri="mongodb+srv://<username>:<password>@<cluster-url>/dbname" --out=/path/to/backup  --excludeCollection xyz
-
+====================================================================================================================================================================================
 sudo chown -R $USER /folder
-
+====================================================================================================================================================================================
 db.getCollectionNames().forEach((cn)=> cn.includes("_revision") && db.collection(cn).drop())
-
+====================================================================================================================================================================================
 # Protected branches
 protected=("development" "acceptance" "master")
 
@@ -87,12 +87,12 @@ for branch in $(git branch | sed 's/..//'); do
     git branch -D "$branch"
   fi
 done
-
+====================================================================================================================================================================================
 sudo usermod -aG docker $USER
 newgrp docker
 
 
-
+====================================================================================================================================================================================
 cd ~/Downloads
 
 chmod +x Cursor-1.1.3-x86_64.AppImage
@@ -117,7 +117,7 @@ Categories=Development;
 
 sudo chmod +x /usr/share/applications/cursor.desktop
 
-
+====================================================================================================================================================================================
 tar file install
 tar -xzf studio-3t-community-edition-linux-x64.tar.gz
 sudo mv studio-3t-YYYY.MM.DD /opt/studio-3t
@@ -136,7 +136,7 @@ Categories=Development;Database;
 chmod +x /usr/share/applications/studio-3t.desktop
 
 
-
+====================================================================================================================================================================================
 db.adminCommand({ listDatabases: 1, nameOnly: true }).databases.forEach(function(dbs) {
     if (/_Development/.test(dbs.name)) {
         print("Found database: " + dbs.name);
@@ -146,7 +146,7 @@ db.adminCommand({ listDatabases: 1, nameOnly: true }).databases.forEach(function
     }
 });
 
-
+====================================================================================================================================================================================
 db.adminCommand({ listDatabases: 1, nameOnly: true }).databases.forEach(function (dbs) {
   if (/_Acceptance/.test(dbs.name)) {
     print("Processing database: " + dbs.name);
