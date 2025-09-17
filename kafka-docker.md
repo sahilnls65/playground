@@ -57,7 +57,7 @@ services:
     image: provectuslabs/kafka-ui:latest
     container_name: kafka-ui
     ports:
-      - "8081:8081"
+      - "8081:8080"
     depends_on:
       - kafka
     environment:
