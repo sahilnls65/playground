@@ -33,7 +33,7 @@ Create `docker-compose.yml`:
 version: '3.8'
 services:
   zookeeper:
-    image: confluentinc/cp-zookeeper:latest
+    image: confluentinc/cp-zookeeper:7.6.1
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
@@ -41,7 +41,7 @@ services:
       - "2181:2181"
 
   kafka:
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:7.6.1
     depends_on:
       - zookeeper
     ports:
