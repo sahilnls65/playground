@@ -331,14 +331,13 @@ fi
 ## 🧩 Group by IP
 
 ```js
-const byIP = db.currentOp(true).inprog
+db.currentOp(true).inprog
   .filter(op => op.client)
   .map(op => op.client.split(':')[0])
   .reduce((acc, ip) => {
     acc[ip] = (acc[ip] || 0) + 1;
     return acc;
   }, {});
-console.log(byIP);
 ```
 
 ---
@@ -346,7 +345,7 @@ console.log(byIP);
 ## 🧑‍💻 Group by User + DB
 
 ```js
-const byUserDb = db.currentOp(true).inprog
+db.currentOp(true).inprog
   .filter(op => op.authenticatedUsers?.length)
   .map(op => {
     const u = op.authenticatedUsers[0];
@@ -356,48 +355,16 @@ const byUserDb = db.currentOp(true).inprog
     acc[key] = (acc[key] || 0) + 1;
     return acc;
   }, {});
-console.log(byUserDb);
+
+db.currentOp(true).inprog
+  .map(op => {
+    return `${op.appName}`;
+  })
+  .reduce((acc, key) => {
+    acc[key] = (acc[key] || 0) + 1;
+    return acc;
+  }, {});
 ```
-
----
-
-## 📊 Total Active vs Inactive Count
-
-```js
-const ops = db.currentOp(true).inprog;
-const stats = {
-  total: ops.length,
-  withClient: ops.filter(op => op.client).length,
-  active: ops.filter(op => op.active).length,
-  idle: ops.filter(op => op.client && !op.op).length,
-};
-console.log(stats);
-```
-
----
-
-## 📌 Tip: Monitor from Application (Node.js)
-
-You can also monitor active connections from your **app** if using `mongoose`:
-
-```js
-mongoose.connection.on('connected', () => console.log('MongoDB connected'));
-mongoose.connection.on('disconnected', () => console.log('MongoDB disconnected'));
-```
-
----
-
-## ✅ Summary of Most Useful Commands
-
-| Task                   | Command                                 |
-| ---------------------- | --------------------------------------- |
-| Total connections      | `db.serverStatus().connections`         |
-| All current operations | `db.currentOp(true).inprog`             |
-| Active queries         | `...filter(op => op.active)`            |
-| Idle sockets           | `...filter(op => op.client && !op.op)`  |
-| Group by IP            | See [IP grouping script](#ip-group)     |
-| Group by user          | See [User grouping script](#user-group) |
-| Kill operation         | `db.killOp(opid)`                       |
 
 =====================================================================================================================================================================================================
 redis command delete keys by pattern
