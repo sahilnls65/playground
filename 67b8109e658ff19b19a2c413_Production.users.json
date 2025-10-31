@@ -1,0 +1,2711 @@
+[
+  {
+    "_id": "xshavanx@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "68274e2224ed32eb21e21c2a"
+      },
+      {
+        "$oid": "68274e22ee659ee8933331f5"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|68274e2467e5fabd8fd19267"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "68274e2224ed32eb21e21c2a"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:39:30.833Z"
+        },
+        "email": "xshavanx@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:39:30.833Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Urbanek",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "44-253",
+        "flexworkerid": 51335,
+        "flexworkernumber": 7306964,
+        "active": true,
+        "firstname": "Michal",
+        "prefix": "",
+        "residentialcity": "RYBNIK",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "M",
+        "residentialnumber": 1,
+        "readyforpayroll": true,
+        "phone": "+31623150042",
+        "emergencyphone": null,
+        "dateofbirth": "Fri Apr 30 1993 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Osiedle Poludnie 54 B",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|68274e2467e5fabd8fd19267"
+      },
+      {
+        "_id": {
+          "$oid": "68274e22ee659ee8933331f5"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:39:30.924Z"
+        },
+        "email": "xshavanx@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:39:30.924Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Urbanek",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "44-253",
+        "flexworkerid": 51335,
+        "flexworkernumber": 7306964,
+        "active": true,
+        "firstname": "Michal",
+        "prefix": "",
+        "residentialcity": "RYBNIK",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "M",
+        "residentialnumber": 1,
+        "readyforpayroll": true,
+        "phone": "+31623150042",
+        "emergencyphone": null,
+        "dateofbirth": "Fri Apr 30 1993 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Osiedle Poludnie 54 B",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "marcinfron1996@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f41aee659ee89333301d"
+      },
+      {
+        "$oid": "6826f41aee659ee893333025"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6826f41bf55d807f32bd547f"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f41aee659ee89333301d"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:22.118Z"
+        },
+        "email": "marcinfron1996@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:22.118Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Fron",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "11-220",
+        "flexworkerid": 51315,
+        "flexworkernumber": 7306529,
+        "active": true,
+        "firstname": "Marcin",
+        "prefix": "",
+        "residentialcity": "GOROWO ILAWECKIE",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "M",
+        "residentialnumber": 54,
+        "readyforpayroll": true,
+        "phone": "+48575452218",
+        "emergencyphone": null,
+        "dateofbirth": "Mon Sep 02 1996 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Janikowo",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6826f41bf55d807f32bd547f"
+      },
+      {
+        "_id": {
+          "$oid": "6826f41aee659ee893333025"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:22.265Z"
+        },
+        "email": "marcinfron1996@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:22.265Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Fron",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "11-220",
+        "flexworkerid": 51315,
+        "flexworkernumber": 7306529,
+        "active": true,
+        "firstname": "Marcin",
+        "prefix": "",
+        "residentialcity": "GOROWO ILAWECKIE",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "M",
+        "residentialnumber": 54,
+        "readyforpayroll": true,
+        "phone": "+48575452218",
+        "emergencyphone": null,
+        "dateofbirth": "Mon Sep 02 1996 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Janikowo",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "patryk.gawron@vp.pl",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f41d07ccaa6b9fc53f5b"
+      },
+      {
+        "$oid": "6826f41d07ccaa6b9fc53f64"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6826f41eba6c7caa4c88053e"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f41d07ccaa6b9fc53f5b"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:25.157Z"
+        },
+        "email": "patryk.gawron@vp.pl",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:25.157Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Gawron",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "39-200",
+        "flexworkerid": 51317,
+        "flexworkernumber": 7306984,
+        "active": true,
+        "firstname": "Patryk",
+        "prefix": "",
+        "residentialcity": "DEBICA",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "P",
+        "residentialnumber": 43,
+        "readyforpayroll": true,
+        "phone": "513968099",
+        "emergencyphone": null,
+        "dateofbirth": "Sun Jan 21 2001 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Konarskiego 16",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6826f41eba6c7caa4c88053e"
+      },
+      {
+        "_id": {
+          "$oid": "6826f41d07ccaa6b9fc53f64"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:25.234Z"
+        },
+        "email": "patryk.gawron@vp.pl",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:25.234Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Gawron",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "39-200",
+        "flexworkerid": 51317,
+        "flexworkernumber": 7306984,
+        "active": true,
+        "firstname": "Patryk",
+        "prefix": "",
+        "residentialcity": "DEBICA",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "P",
+        "residentialnumber": 43,
+        "readyforpayroll": true,
+        "phone": "513968099",
+        "emergencyphone": null,
+        "dateofbirth": "Sun Jan 21 2001 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Konarskiego 16",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "wojciechstaszewski2@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f42c07ccaa6b9fc5409f"
+      },
+      {
+        "$oid": "6826f42c24ed32eb21e21b73"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6826f42dba6c7caa4c88053f"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f42c07ccaa6b9fc5409f"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:40.782Z"
+        },
+        "email": "wojciechstaszewski2@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:40.782Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Staszewski",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "11-700",
+        "flexworkerid": 51328,
+        "flexworkernumber": 7306527,
+        "active": true,
+        "firstname": "Wojciech",
+        "prefix": "",
+        "residentialcity": "MRAGOWO",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "W",
+        "residentialnumber": 3,
+        "readyforpayroll": true,
+        "phone": "+48507351249",
+        "emergencyphone": null,
+        "dateofbirth": "Fri Mar 28 1986 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Osiedle Metalowcow",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6826f42dba6c7caa4c88053f"
+      },
+      {
+        "_id": {
+          "$oid": "6826f42c24ed32eb21e21b73"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:40.805Z"
+        },
+        "email": "wojciechstaszewski2@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:40.805Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Staszewski",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "11-700",
+        "flexworkerid": 51328,
+        "flexworkernumber": 7306527,
+        "active": true,
+        "firstname": "Wojciech",
+        "prefix": "",
+        "residentialcity": "MRAGOWO",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "W",
+        "residentialnumber": 3,
+        "readyforpayroll": true,
+        "phone": "+48507351249",
+        "emergencyphone": null,
+        "dateofbirth": "Fri Mar 28 1986 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Osiedle Metalowcow",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "zigiss1994@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "68274e3024ed32eb21e21c9f"
+      },
+      {
+        "$oid": "68274e3007ccaa6b9fc5417c"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|68274e323ebe9f3bb86bd306"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "68274e3024ed32eb21e21c9f"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:39:44.842Z"
+        },
+        "email": "zigiss1994@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:39:44.842Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Kleins",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "lv",
+        "residentialnumbersuffix": "SKALBES",
+        "residentialpostalcode": "LV5112",
+        "flexworkerid": 51341,
+        "flexworkernumber": 7307776,
+        "active": true,
+        "firstname": "Zigurds",
+        "prefix": "",
+        "residentialcity": "AIZKRAUKLES NOVADS",
+        "residentialcountry": "LV",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "Z",
+        "residentialnumber": 1,
+        "readyforpayroll": true,
+        "phone": "+37126316898",
+        "emergencyphone": null,
+        "dateofbirth": "Sat Oct 30 1993 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Zalves pagasts",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|68274e323ebe9f3bb86bd306"
+      },
+      {
+        "_id": {
+          "$oid": "68274e3007ccaa6b9fc5417c"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:39:44.861Z"
+        },
+        "email": "zigiss1994@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:39:44.861Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Kleins",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "lv",
+        "residentialnumbersuffix": "SKALBES",
+        "residentialpostalcode": "LV5112",
+        "flexworkerid": 51341,
+        "flexworkernumber": 7307776,
+        "active": true,
+        "firstname": "Zigurds",
+        "prefix": "",
+        "residentialcity": "AIZKRAUKLES NOVADS",
+        "residentialcountry": "LV",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "Z",
+        "residentialnumber": 1,
+        "readyforpayroll": true,
+        "phone": "+37126316898",
+        "emergencyphone": null,
+        "dateofbirth": "Sat Oct 30 1993 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Zalves pagasts",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "maciejkaskosz83@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "68274e2fdc91d33ac95df415"
+      },
+      {
+        "$oid": "68274e2fee659ee893333240"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|68274e308dc5706748a60160"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "68274e2fdc91d33ac95df415"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:39:43.086Z"
+        },
+        "email": "maciejkaskosz83@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:39:43.086Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Kaskosz",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "50-234",
+        "flexworkerid": 51340,
+        "flexworkernumber": 7307810,
+        "active": true,
+        "firstname": "Maciej",
+        "prefix": "",
+        "residentialcity": "WROCLAW",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "M",
+        "residentialnumber": 23,
+        "readyforpayroll": true,
+        "phone": "575714037",
+        "emergencyphone": null,
+        "dateofbirth": "Mon Feb 07 1983 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Slowianska",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|68274e308dc5706748a60160"
+      },
+      {
+        "_id": {
+          "$oid": "68274e2fee659ee893333240"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:39:43.125Z"
+        },
+        "email": "maciejkaskosz83@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:39:43.125Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Kaskosz",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "50-234",
+        "flexworkerid": 51340,
+        "flexworkernumber": 7307810,
+        "active": true,
+        "firstname": "Maciej",
+        "prefix": "",
+        "residentialcity": "WROCLAW",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "M",
+        "residentialnumber": 23,
+        "readyforpayroll": true,
+        "phone": "575714037",
+        "emergencyphone": null,
+        "dateofbirth": "Mon Feb 07 1983 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Slowianska",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "roberttancula7@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f40a07ccaa6b9fc53eb7"
+      },
+      {
+        "$oid": "6826f40aee659ee893332f61"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6826f40db8d1454f8ae64dad"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f40a07ccaa6b9fc53eb7"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:06.740Z"
+        },
+        "email": "roberttancula7@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:06.740Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Tancula",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "41500",
+        "flexworkerid": 51308,
+        "flexworkernumber": 7306249,
+        "active": true,
+        "firstname": "Robert",
+        "prefix": "",
+        "residentialcity": "CHORZOW",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "R",
+        "residentialnumber": 3,
+        "readyforpayroll": true,
+        "phone": "00491773905893",
+        "emergencyphone": null,
+        "dateofbirth": "Sat Jan 20 2001 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Kluczborka",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6826f40db8d1454f8ae64dad"
+      },
+      {
+        "_id": {
+          "$oid": "6826f40aee659ee893332f61"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:06.746Z"
+        },
+        "email": "roberttancula7@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:06.746Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Tancula",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "41500",
+        "flexworkerid": 51308,
+        "flexworkernumber": 7306249,
+        "active": true,
+        "firstname": "Robert",
+        "prefix": "",
+        "residentialcity": "CHORZOW",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "R",
+        "residentialnumber": 3,
+        "readyforpayroll": true,
+        "phone": "00491773905893",
+        "emergencyphone": null,
+        "dateofbirth": "Sat Jan 20 2001 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Kluczborka",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "sporysz.filip01@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f42bee659ee8933330e5"
+      },
+      {
+        "$oid": "6826f42bee659ee8933330f2"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6826f42cf55d807f32bd5484"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f42bee659ee8933330e5"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:39.293Z"
+        },
+        "email": "sporysz.filip01@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:39.293Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Sporysz",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "34-382",
+        "flexworkerid": 51327,
+        "flexworkernumber": 7306245,
+        "active": true,
+        "firstname": "Filip",
+        "prefix": "",
+        "residentialcity": "BRZUSNIK",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "F",
+        "residentialnumber": 101,
+        "readyforpayroll": true,
+        "phone": "+48572912695",
+        "emergencyphone": null,
+        "dateofbirth": "Thu Aug 30 2001 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Brzusnik",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6826f42cf55d807f32bd5484"
+      },
+      {
+        "_id": {
+          "$oid": "6826f42bee659ee8933330f2"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:39.442Z"
+        },
+        "email": "sporysz.filip01@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:39.442Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Sporysz",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "34-382",
+        "flexworkerid": 51327,
+        "flexworkernumber": 7306245,
+        "active": true,
+        "firstname": "Filip",
+        "prefix": "",
+        "residentialcity": "BRZUSNIK",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "F",
+        "residentialnumber": 101,
+        "readyforpayroll": true,
+        "phone": "+48572912695",
+        "emergencyphone": null,
+        "dateofbirth": "Thu Aug 30 2001 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Brzusnik",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "Karpinskiigor34@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f42207ccaa6b9fc53fdb"
+      },
+      {
+        "$oid": "6826f42207ccaa6b9fc53fde"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6826f423f55d807f32bd5482"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f42207ccaa6b9fc53fdb"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:30.714Z"
+        },
+        "email": "Karpinskiigor34@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:30.714Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Karpinski",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "26-300",
+        "flexworkerid": 51321,
+        "flexworkernumber": 7306511,
+        "active": true,
+        "firstname": "Igor",
+        "prefix": "",
+        "residentialcity": "OPOCZNO",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "I",
+        "residentialnumber": 5,
+        "readyforpayroll": true,
+        "phone": "+48792892334",
+        "emergencyphone": null,
+        "dateofbirth": "Sun Jun 29 2003 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Parkowa",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6826f423f55d807f32bd5482"
+      },
+      {
+        "_id": {
+          "$oid": "6826f42207ccaa6b9fc53fde"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:30.752Z"
+        },
+        "email": "Karpinskiigor34@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:30.752Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Karpinski",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "26-300",
+        "flexworkerid": 51321,
+        "flexworkernumber": 7306511,
+        "active": true,
+        "firstname": "Igor",
+        "prefix": "",
+        "residentialcity": "OPOCZNO",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "I",
+        "residentialnumber": 5,
+        "readyforpayroll": true,
+        "phone": "+48792892334",
+        "emergencyphone": null,
+        "dateofbirth": "Sun Jun 29 2003 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Parkowa",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "kamilwojakowski23@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f432dc91d33ac95df361"
+      },
+      {
+        "$oid": "6826f43224ed32eb21e21b98"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6826f433ba6c7caa4c880540"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f432dc91d33ac95df361"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:46.639Z"
+        },
+        "email": "kamilwojakowski23@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:46.639Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Wojakowski",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "B",
+        "residentialpostalcode": "97-330",
+        "flexworkerid": 51332,
+        "flexworkernumber": 7306234,
+        "active": true,
+        "firstname": "Kamil",
+        "prefix": "",
+        "residentialcity": "PONIATOW",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "K",
+        "residentialnumber": 6,
+        "readyforpayroll": true,
+        "phone": "+48510683415",
+        "emergencyphone": null,
+        "dateofbirth": "Fri Oct 30 1992 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Lipowa",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6826f433ba6c7caa4c880540"
+      },
+      {
+        "_id": {
+          "$oid": "6826f43224ed32eb21e21b98"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:46.643Z"
+        },
+        "email": "kamilwojakowski23@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:46.643Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Wojakowski",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "B",
+        "residentialpostalcode": "97-330",
+        "flexworkerid": 51332,
+        "flexworkernumber": 7306234,
+        "active": true,
+        "firstname": "Kamil",
+        "prefix": "",
+        "residentialcity": "PONIATOW",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "K",
+        "residentialnumber": 6,
+        "readyforpayroll": true,
+        "phone": "+48510683415",
+        "emergencyphone": null,
+        "dateofbirth": "Fri Oct 30 1992 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Lipowa",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "grzesiekswiszcz@interia.pl",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f3b3ee659ee893332f3c"
+      },
+      {
+        "$oid": "6826f3b324ed32eb21e21a82"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6826f3b450e7e76b855773e4"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f3b3ee659ee893332f3c"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:13:39.488Z"
+        },
+        "email": "grzesiekswiszcz@interia.pl",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:13:39.488Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Swiszcz",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "38-220",
+        "flexworkerid": 51306,
+        "flexworkernumber": 7306146,
+        "active": true,
+        "firstname": "Grzegorz",
+        "prefix": "",
+        "residentialcity": "DEBOWIEC",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "G",
+        "residentialnumber": 55,
+        "readyforpayroll": true,
+        "phone": "+48663505238",
+        "emergencyphone": null,
+        "dateofbirth": "Thu Jul 22 1999 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Radosc",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6826f3b450e7e76b855773e4"
+      },
+      {
+        "_id": {
+          "$oid": "6826f3b324ed32eb21e21a82"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:13:39.618Z"
+        },
+        "email": "grzesiekswiszcz@interia.pl",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:13:39.618Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Swiszcz",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "38-220",
+        "flexworkerid": 51306,
+        "flexworkernumber": 7306146,
+        "active": true,
+        "firstname": "Grzegorz",
+        "prefix": "",
+        "residentialcity": "DEBOWIEC",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "G",
+        "residentialnumber": 55,
+        "readyforpayroll": true,
+        "phone": "+48663505238",
+        "emergencyphone": null,
+        "dateofbirth": "Thu Jul 22 1999 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Radosc",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "marcelmarczak2002@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f2c724ed32eb21e21a5d"
+      },
+      {
+        "$oid": "6826f2c7ee659ee893332f1b"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|687a3e6647997587e9a386d8"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f2c724ed32eb21e21a5d"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:09:43.158Z"
+        },
+        "email": "marcelmarczak2002@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:09:43.158Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Marczak",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "7061 XP",
+        "flexworkerid": 51304,
+        "flexworkernumber": 6319046,
+        "active": true,
+        "firstname": "Marcel",
+        "prefix": "",
+        "residentialcity": "TERBORG",
+        "residentialcountry": "NL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": true,
+        "initials": "M",
+        "residentialnumber": 20,
+        "readyforpayroll": true,
+        "phone": "",
+        "emergencyphone": null,
+        "dateofbirth": {
+          "$date": "2002-01-30T00:00:00.000Z"
+        },
+        "residentialaddressline": "Prins Willem-Alexanderstraat",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|687a3e6647997587e9a386d8",
+        "bsn": "785450270"
+      },
+      {
+        "_id": {
+          "$oid": "6826f2c7ee659ee893332f1b"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:09:43.188Z"
+        },
+        "email": "marcelmarczak2002@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:09:43.188Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Marczak",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "7061 XP",
+        "flexworkerid": 51304,
+        "flexworkernumber": 6319046,
+        "active": true,
+        "firstname": "Marcel",
+        "prefix": "",
+        "residentialcity": "TERBORG",
+        "residentialcountry": "NL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "M",
+        "residentialnumber": 20,
+        "readyforpayroll": true,
+        "phone": "+31686242640",
+        "emergencyphone": null,
+        "dateofbirth": "Wed Jan 30 2002 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Prins Willem-Alexanderstraat",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "dawid.linetty@op.pl",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "682ae8a707ccaa6b9fc5473d"
+      },
+      {
+        "$oid": "682ae8a7dc91d33ac95df9d5"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|682ae8aa915fac8185eaedff"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "682ae8a707ccaa6b9fc5473d"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-19T08:15:36.053Z"
+        },
+        "email": "dawid.linetty@op.pl",
+        "nox_updated_at": {
+          "$date": "2025-05-19T08:15:36.053Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Linetty",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "A",
+        "residentialpostalcode": "62-113",
+        "flexworkerid": 51355,
+        "flexworkernumber": 7308567,
+        "active": true,
+        "firstname": "Dawid",
+        "prefix": "",
+        "residentialcity": "RUDNICZYN",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "D",
+        "residentialnumber": 19,
+        "readyforpayroll": true,
+        "phone": "+48603789871",
+        "emergencyphone": null,
+        "dateofbirth": "Mon Jul 26 1993 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Rudniczyn",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|682ae8aa915fac8185eaedff"
+      },
+      {
+        "_id": {
+          "$oid": "682ae8a7dc91d33ac95df9d5"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-19T08:15:36.056Z"
+        },
+        "email": "dawid.linetty@op.pl",
+        "nox_updated_at": {
+          "$date": "2025-05-19T08:15:36.056Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Linetty",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "A",
+        "residentialpostalcode": "62-113",
+        "flexworkerid": 51355,
+        "flexworkernumber": 7308567,
+        "active": true,
+        "firstname": "Dawid",
+        "prefix": "",
+        "residentialcity": "RUDNICZYN",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "D",
+        "residentialnumber": 19,
+        "readyforpayroll": true,
+        "phone": "+48603789871",
+        "emergencyphone": null,
+        "dateofbirth": "Mon Jul 26 1993 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Rudniczyn",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "jozefluk99@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "68274e3707ccaa6b9fc541c2"
+      },
+      {
+        "$oid": "68274e37dc91d33ac95df48b"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|68274e37f163377c997bc146"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "68274e3707ccaa6b9fc541c2"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:39:51.027Z"
+        },
+        "email": "jozefluk99@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:39:51.027Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Lukaszewski",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "4",
+        "flexworkerid": 51345,
+        "flexworkernumber": 7306107,
+        "active": true,
+        "firstname": "Jozef",
+        "prefix": "",
+        "residentialcity": "SULOW",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "J",
+        "residentialnumber": 1,
+        "readyforpayroll": true,
+        "phone": "+48665682764",
+        "emergencyphone": null,
+        "dateofbirth": "Sun Apr 29 1973 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Lesnikow",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|68274e37f163377c997bc146"
+      },
+      {
+        "_id": {
+          "$oid": "68274e37dc91d33ac95df48b"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:39:51.050Z"
+        },
+        "email": "jozefluk99@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:39:51.050Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Lukaszewski",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "4",
+        "flexworkerid": 51345,
+        "flexworkernumber": 7306107,
+        "active": true,
+        "firstname": "Jozef",
+        "prefix": "",
+        "residentialcity": "SULOW",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "J",
+        "residentialnumber": 1,
+        "readyforpayroll": true,
+        "phone": "+48665682764",
+        "emergencyphone": null,
+        "dateofbirth": "Sun Apr 29 1973 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Lesnikow",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "gasanbeinarovics@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "682757a7ee659ee893333309"
+      },
+      {
+        "$oid": "682757a7dc91d33ac95df4ec"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|682757aa9543e0fc4e3ff747"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "682757a7ee659ee893333309"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T15:20:07.437Z"
+        },
+        "email": "gasanbeinarovics@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T15:20:07.437Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Beinarovics",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "lv",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "46508",
+        "flexworkerid": 51352,
+        "flexworkernumber": 7308067,
+        "active": true,
+        "firstname": "Gasans",
+        "prefix": "",
+        "residentialcity": "XANTEN",
+        "residentialcountry": "DE",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "G",
+        "residentialnumber": 53,
+        "readyforpayroll": true,
+        "phone": "+31623475466",
+        "emergencyphone": null,
+        "dateofbirth": "Wed Apr 13 1988 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Kalkarerstrasse",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|682757aa9543e0fc4e3ff747"
+      },
+      {
+        "_id": {
+          "$oid": "682757a7dc91d33ac95df4ec"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T15:20:07.520Z"
+        },
+        "email": "gasanbeinarovics@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T15:20:07.520Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Beinarovics",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "lv",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "46508",
+        "flexworkerid": 51352,
+        "flexworkernumber": 7308067,
+        "active": true,
+        "firstname": "Gasans",
+        "prefix": "",
+        "residentialcity": "XANTEN",
+        "residentialcountry": "DE",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "G",
+        "residentialnumber": 53,
+        "readyforpayroll": true,
+        "phone": "+31623475466",
+        "emergencyphone": null,
+        "dateofbirth": "Wed Apr 13 1988 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Kalkarerstrasse",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "telinttel20@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "682758a507ccaa6b9fc54244"
+      },
+      {
+        "$oid": "682758a5dc91d33ac95df50d"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|682758a7476cd75aa6b50ba7"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "682758a507ccaa6b9fc54244"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T15:24:21.283Z"
+        },
+        "email": "telinttel20@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T15:24:21.283Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Kucharczyk",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "42-261",
+        "flexworkerid": 51353,
+        "flexworkernumber": 7308061,
+        "active": true,
+        "firstname": "Krzysztof",
+        "prefix": "",
+        "residentialcity": "WIES",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "K",
+        "residentialnumber": 9,
+        "readyforpayroll": true,
+        "phone": "796788802",
+        "emergencyphone": null,
+        "dateofbirth": "Thu Apr 20 1989 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Starcza",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|682758a7476cd75aa6b50ba7"
+      },
+      {
+        "_id": {
+          "$oid": "682758a5dc91d33ac95df50d"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T15:24:21.350Z"
+        },
+        "email": "telinttel20@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T15:24:21.350Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Kucharczyk",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "42-261",
+        "flexworkerid": 51353,
+        "flexworkernumber": 7308061,
+        "active": true,
+        "firstname": "Krzysztof",
+        "prefix": "",
+        "residentialcity": "WIES",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "K",
+        "residentialnumber": 9,
+        "readyforpayroll": true,
+        "phone": "796788802",
+        "emergencyphone": null,
+        "dateofbirth": "Thu Apr 20 1989 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Starcza",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "tomasz.sienkiewicz44@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "68274e3adc91d33ac95df4b0"
+      },
+      {
+        "$oid": "68274e3aee659ee893333287"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|68274e3b8dc5706748a60161"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "68274e3adc91d33ac95df4b0"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:39:54.263Z"
+        },
+        "email": "tomasz.sienkiewicz44@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:39:54.263Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Sienkiewicz",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "16-010",
+        "flexworkerid": 51347,
+        "flexworkernumber": 7307532,
+        "active": true,
+        "firstname": "Tomasz",
+        "prefix": "",
+        "residentialcity": "WASILKOW",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "T",
+        "residentialnumber": 8,
+        "readyforpayroll": true,
+        "phone": "+48534695045",
+        "emergencyphone": null,
+        "dateofbirth": "Mon Mar 31 1980 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Nadrzeczna",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|68274e3b8dc5706748a60161"
+      },
+      {
+        "_id": {
+          "$oid": "68274e3aee659ee893333287"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:39:54.367Z"
+        },
+        "email": "tomasz.sienkiewicz44@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:39:54.367Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Sienkiewicz",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "16-010",
+        "flexworkerid": 51347,
+        "flexworkernumber": 7307532,
+        "active": true,
+        "firstname": "Tomasz",
+        "prefix": "",
+        "residentialcity": "WASILKOW",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "T",
+        "residentialnumber": 8,
+        "readyforpayroll": true,
+        "phone": "+48534695045",
+        "emergencyphone": null,
+        "dateofbirth": "Mon Mar 31 1980 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Nadrzeczna",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "olegpusko33@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "68274de507ccaa6b9fc54141"
+      },
+      {
+        "$oid": "68274de524ed32eb21e21c09"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|68274de8d21c0d079a45b6e3"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "68274de507ccaa6b9fc54141"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:38:29.930Z"
+        },
+        "email": "olegpusko33@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:38:29.930Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Pusko",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "lv",
+        "residentialnumbersuffix": "A",
+        "residentialpostalcode": "LV-5404",
+        "flexworkerid": 51334,
+        "flexworkernumber": 7305829,
+        "active": true,
+        "firstname": "Olegs",
+        "prefix": "",
+        "residentialcity": "DAUGAVPILS",
+        "residentialcountry": "LV",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "O",
+        "residentialnumber": 58,
+        "readyforpayroll": true,
+        "phone": "28869531",
+        "emergencyphone": null,
+        "dateofbirth": {
+          "$date": "1973-07-10T00:00:00.000Z"
+        },
+        "residentialaddressline": "Smilu iela",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|68274de8d21c0d079a45b6e3",
+        "bsn": "684625076"
+      },
+      {
+        "_id": {
+          "$oid": "68274de524ed32eb21e21c09"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:38:29.967Z"
+        },
+        "email": "olegpusko33@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:38:29.967Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Pusko",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "lv",
+        "residentialnumbersuffix": "A",
+        "residentialpostalcode": "LV-5404",
+        "flexworkerid": 51334,
+        "flexworkernumber": 7305829,
+        "active": true,
+        "firstname": "Oleg",
+        "prefix": "",
+        "residentialcity": "DAUGAVPILS",
+        "residentialcountry": "LV",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "O",
+        "residentialnumber": 58,
+        "readyforpayroll": true,
+        "phone": "28869531",
+        "emergencyphone": null,
+        "dateofbirth": "Tue Jul 10 1973 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Smilu iela",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "artjoms54.8954@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "68274e3807ccaa6b9fc541dc"
+      },
+      {
+        "$oid": "68274e3824ed32eb21e21cd5"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|68274e39f163377c997bc147"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "68274e3807ccaa6b9fc541dc"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:39:52.690Z"
+        },
+        "email": "artjoms54.8954@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:39:52.690Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Pusko",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "lv",
+        "residentialnumbersuffix": "A",
+        "residentialpostalcode": "5404",
+        "flexworkerid": 51346,
+        "flexworkernumber": 7305828,
+        "active": true,
+        "firstname": "Artjoms",
+        "prefix": "",
+        "residentialcity": "DAUGAVPILS",
+        "residentialcountry": "LV",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "A",
+        "residentialnumber": 58,
+        "readyforpayroll": true,
+        "phone": "+37123004219",
+        "emergencyphone": null,
+        "dateofbirth": "Sun Dec 31 2006 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Smilsu iela 58A",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|68274e39f163377c997bc147"
+      },
+      {
+        "_id": {
+          "$oid": "68274e3824ed32eb21e21cd5"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T14:39:52.706Z"
+        },
+        "email": "artjoms54.8954@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T14:39:52.706Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Pusko",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "lv",
+        "residentialnumbersuffix": "A",
+        "residentialpostalcode": "5404",
+        "flexworkerid": 51346,
+        "flexworkernumber": 7305828,
+        "active": true,
+        "firstname": "Artjoms",
+        "prefix": "",
+        "residentialcity": "DAUGAVPILS",
+        "residentialcountry": "LV",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "A",
+        "residentialnumber": 58,
+        "readyforpayroll": true,
+        "phone": "+37123004219",
+        "emergencyphone": null,
+        "dateofbirth": "Sun Dec 31 2006 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Smilsu iela 58A",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "arturfedorcuk93@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f41724ed32eb21e21ab8"
+      },
+      {
+        "$oid": "6826f41707ccaa6b9fc53f29"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6826f417f55d807f32bd547e"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f41724ed32eb21e21ab8"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:19.127Z"
+        },
+        "email": "arturfedorcuk93@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:19.127Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Fedorchuk",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "uk",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "8606 VP",
+        "flexworkerid": 51313,
+        "flexworkernumber": 7305893,
+        "active": true,
+        "firstname": "Hryhorii",
+        "prefix": "",
+        "residentialcity": "SNEEK",
+        "residentialcountry": "NL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "H",
+        "residentialnumber": 7,
+        "readyforpayroll": true,
+        "phone": "+380981147989",
+        "emergencyphone": null,
+        "dateofbirth": "Sun Jan 09 1983 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Alexanderstraat 21",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6826f417f55d807f32bd547e"
+      },
+      {
+        "_id": {
+          "$oid": "6826f41707ccaa6b9fc53f29"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:19.138Z"
+        },
+        "email": "arturfedorcuk93@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:19.138Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Fedorchuk",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "uk",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "8606 VP",
+        "flexworkerid": 51313,
+        "flexworkernumber": 7305893,
+        "active": true,
+        "firstname": "Hryhorii",
+        "prefix": "",
+        "residentialcity": "SNEEK",
+        "residentialcountry": "NL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "H",
+        "residentialnumber": 7,
+        "readyforpayroll": true,
+        "phone": "+380981147989",
+        "emergencyphone": null,
+        "dateofbirth": "Sun Jan 09 1983 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Alexanderstraat 21",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "kamil.walenciak@onet.pl",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f42f07ccaa6b9fc540c0"
+      },
+      {
+        "$oid": "6826f42fee659ee893333148"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6826f430f55d807f32bd5485"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f42f07ccaa6b9fc540c0"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:43.542Z"
+        },
+        "email": "kamil.walenciak@onet.pl",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:43.542Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Walencjak",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "65-020",
+        "flexworkerid": 51330,
+        "flexworkernumber": 7307042,
+        "active": true,
+        "firstname": "Kamil",
+        "prefix": "",
+        "residentialcity": "MOSINA",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "K",
+        "residentialnumber": 3,
+        "readyforpayroll": true,
+        "phone": "+48796643342",
+        "emergencyphone": null,
+        "dateofbirth": "Tue Jul 10 2001 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Parkowa",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6826f430f55d807f32bd5485"
+      },
+      {
+        "_id": {
+          "$oid": "6826f42fee659ee893333148"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:43.586Z"
+        },
+        "email": "kamil.walenciak@onet.pl",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:43.586Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Walencjak",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "65-020",
+        "flexworkerid": 51330,
+        "flexworkernumber": 7307042,
+        "active": true,
+        "firstname": "Kamil",
+        "prefix": "",
+        "residentialcity": "MOSINA",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "K",
+        "residentialnumber": 3,
+        "readyforpayroll": true,
+        "phone": "+48796643342",
+        "emergencyphone": null,
+        "dateofbirth": "Tue Jul 10 2001 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Parkowa",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "valeriabiagii099@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f41e24ed32eb21e21aee"
+      },
+      {
+        "$oid": "6826f41eee659ee893333076"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6826f41fb8d1454f8ae64db1"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f41e24ed32eb21e21aee"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:26.370Z"
+        },
+        "email": "valeriabiagii099@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:26.370Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Glowacki",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "40-281",
+        "flexworkerid": 51318,
+        "flexworkernumber": 7306976,
+        "active": true,
+        "firstname": "Jonatan",
+        "prefix": "",
+        "residentialcity": "KATOWICE",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "J",
+        "residentialnumber": 4,
+        "readyforpayroll": true,
+        "phone": "724329416",
+        "emergencyphone": null,
+        "dateofbirth": "Mon Jul 24 1995 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Floriana",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6826f41fb8d1454f8ae64db1"
+      },
+      {
+        "_id": {
+          "$oid": "6826f41eee659ee893333076"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:26.424Z"
+        },
+        "email": "valeriabiagii099@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:26.424Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Glowacki",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "40-281",
+        "flexworkerid": 51318,
+        "flexworkernumber": 7306976,
+        "active": true,
+        "firstname": "Jonatan",
+        "prefix": "",
+        "residentialcity": "KATOWICE",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "J",
+        "residentialnumber": 4,
+        "readyforpayroll": true,
+        "phone": "724329416",
+        "emergencyphone": null,
+        "dateofbirth": "Mon Jul 24 1995 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Floriana",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "szczupi135@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826f42407ccaa6b9fc5400a"
+      },
+      {
+        "$oid": "6826f42424ed32eb21e21b13"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6863ba078d9c17e248bb0411"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826f42407ccaa6b9fc5400a"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:32.184Z"
+        },
+        "email": "szczupi135@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:32.184Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Kreciewski",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "11-010",
+        "flexworkerid": 51322,
+        "flexworkernumber": 7306408,
+        "active": true,
+        "firstname": "Dawid",
+        "prefix": "",
+        "residentialcity": "WOJTOWO",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": true,
+        "initials": "D",
+        "residentialnumber": 4,
+        "readyforpayroll": true,
+        "phone": "",
+        "emergencyphone": null,
+        "dateofbirth": {
+          "$date": "2003-05-30T00:00:00.000Z"
+        },
+        "residentialaddressline": "Jasminowa",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6863ba078d9c17e248bb0411",
+        "bsn": "680240895"
+      },
+      {
+        "_id": {
+          "$oid": "6826f42424ed32eb21e21b13"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T08:15:32.304Z"
+        },
+        "email": "szczupi135@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T08:15:32.304Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Kreciewski",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "11-010",
+        "flexworkerid": 51322,
+        "flexworkernumber": 7306408,
+        "active": true,
+        "firstname": "Dawid",
+        "prefix": "",
+        "residentialcity": "WOJTOWO",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "D",
+        "residentialnumber": 4,
+        "readyforpayroll": true,
+        "phone": "509799023",
+        "emergencyphone": null,
+        "dateofbirth": "Fri May 30 2003 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Jasminowa",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "michalow80@gmail.com",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "6826ec8d24ed32eb21e21a16"
+      },
+      {
+        "$oid": "6826ec8eee659ee893332ef0"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|6826ec9286412081b3c7c40b"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "6826ec8d24ed32eb21e21a16"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T07:43:10.127Z"
+        },
+        "email": "michalow80@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T07:43:10.127Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Owsianiecki",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "86-200",
+        "flexworkerid": 51303,
+        "flexworkernumber": 7307077,
+        "active": true,
+        "firstname": "Michal",
+        "prefix": "",
+        "residentialcity": "CHELMNO",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "MM",
+        "residentialnumber": 18,
+        "readyforpayroll": true,
+        "phone": "+491636463370",
+        "emergencyphone": null,
+        "dateofbirth": "1980-05-03T00:00:00",
+        "residentialaddressline": "Brzoskwiniowa",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|6826ec9286412081b3c7c40b"
+      },
+      {
+        "_id": {
+          "$oid": "6826ec8eee659ee893332ef0"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-16T07:43:10.132Z"
+        },
+        "email": "michalow80@gmail.com",
+        "nox_updated_at": {
+          "$date": "2025-05-16T07:43:10.132Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Owsianiecki",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "86-200",
+        "flexworkerid": 51303,
+        "flexworkernumber": 7307077,
+        "active": true,
+        "firstname": "Michal",
+        "prefix": "",
+        "residentialcity": "CHELMNO",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "M",
+        "residentialnumber": 18,
+        "readyforpayroll": true,
+        "phone": "+491636463370",
+        "emergencyphone": null,
+        "dateofbirth": "Sat May 03 1980 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Brzoskwiniowa",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  },
+  {
+    "_id": "moc.maciej@vp.pl",
+    "count": 2,
+    "ids": [
+      {
+        "$oid": "682aeace07ccaa6b9fc5477e"
+      },
+      {
+        "$oid": "682aeace24ed32eb21e2213e"
+      }
+    ],
+    "auth0Idddddddddddddddddddd": ["auth0|682aead0c779ad57806e69ff"],
+    "data": [
+      {
+        "_id": {
+          "$oid": "682aeace07ccaa6b9fc5477e"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-19T08:24:46.793Z"
+        },
+        "email": "moc.maciej@vp.pl",
+        "nox_updated_at": {
+          "$date": "2025-05-19T08:24:46.793Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Moc",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "34-300",
+        "flexworkerid": 51358,
+        "flexworkernumber": 7308471,
+        "active": true,
+        "firstname": "Maciej",
+        "prefix": "",
+        "residentialcity": "ZYWIEC",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "ML",
+        "residentialnumber": 5,
+        "readyforpayroll": true,
+        "phone": "792569460",
+        "emergencyphone": null,
+        "dateofbirth": "Fri Nov 20 1981 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Osiedle 700-lecia",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0,
+        "auth0Id": "auth0|682aead0c779ad57806e69ff"
+      },
+      {
+        "_id": {
+          "$oid": "682aeace24ed32eb21e2213e"
+        },
+        "role": {
+          "$oid": "67dbdf330e4e7fee58afe478"
+        },
+        "nox_created_at": {
+          "$date": "2025-05-19T08:24:46.790Z"
+        },
+        "email": "moc.maciej@vp.pl",
+        "nox_updated_at": {
+          "$date": "2025-05-19T08:24:46.790Z"
+        },
+        "nox_created_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "nox_updated_by": {
+          "$oid": "67d80635bf7015e0decef11b"
+        },
+        "lastname": "Moc",
+        "gender": 1,
+        "dossiernumber": null,
+        "language": "pl",
+        "residentialnumbersuffix": "",
+        "residentialpostalcode": "34-300",
+        "flexworkerid": 51358,
+        "flexworkernumber": 7308471,
+        "active": true,
+        "firstname": "Maciej",
+        "prefix": "",
+        "residentialcity": "ZYWIEC",
+        "residentialcountry": "PL",
+        "internetportalid": 95,
+        "wantshealthcareinsurance": false,
+        "initials": "ML",
+        "residentialnumber": 5,
+        "readyforpayroll": true,
+        "phone": "792569460",
+        "emergencyphone": null,
+        "dateofbirth": "Fri Nov 20 1981 00:00:00 GMT+0000 (Coordinated Universal Time)",
+        "residentialaddressline": "Osiedle 700-lecia",
+        "driverlicence": [],
+        "knownlanguage": [],
+        "__v": 0
+      }
+    ]
+  }
+]

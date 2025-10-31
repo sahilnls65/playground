@@ -1,0 +1,115 @@
+[
+  {
+    "Email": "marcelmarczak2002@gmail.com",
+    "Document 1 ID": "6826f2c724ed32eb21e21a5d - auth0|687a3e6647997587e9a386d8",
+    "Document 2 ID": "6826f2c7ee659ee893332f1b - undefined",
+    "Differences": [
+      {
+        "1. Type": "Edit",
+        "path": "wantshealthcareinsurance",
+        "from": true,
+        "to": false
+      },
+      {
+        "2. Type": "Edit",
+        "path": "phone",
+        "from": "",
+        "to": "+31686242640"
+      },
+      {
+        "3. Type": "Edit",
+        "path": "dateofbirth",
+        "from": {
+          "$date": "2002-01-30T00:00:00.000Z"
+        },
+        "to": "Wed Jan 30 2002 00:00:00 GMT+0000 (Coordinated Universal Time)"
+      },
+      {
+        "4. Type": "Delete",
+        "path": "bsn",
+        "from": "785450270"
+      }
+    ],
+    "Total Update Count": 4
+  },
+  {
+    "Email": "olegpusko33@gmail.com",
+    "Document 1 ID": "68274de507ccaa6b9fc54141 - auth0|68274de8d21c0d079a45b6e3",
+    "Document 2 ID": "68274de524ed32eb21e21c09 - undefined",
+    "Differences": [
+      {
+        "1. Type": "Edit",
+        "path": "firstname",
+        "from": "Olegs",
+        "to": "Oleg"
+      },
+      {
+        "2. Type": "Edit",
+        "path": "dateofbirth",
+        "from": {
+          "$date": "1973-07-10T00:00:00.000Z"
+        },
+        "to": "Tue Jul 10 1973 00:00:00 GMT+0000 (Coordinated Universal Time)"
+      },
+      {
+        "3. Type": "Delete",
+        "path": "bsn",
+        "from": "684625076"
+      }
+    ],
+    "Total Update Count": 3
+  },
+  {
+    "Email": "szczupi135@gmail.com",
+    "Document 1 ID": "6826f42407ccaa6b9fc5400a - auth0|6863ba078d9c17e248bb0411",
+    "Document 2 ID": "6826f42424ed32eb21e21b13 - undefined",
+    "Differences": [
+      {
+        "1. Type": "Edit",
+        "path": "wantshealthcareinsurance",
+        "from": true,
+        "to": false
+      },
+      {
+        "2. Type": "Edit",
+        "path": "phone",
+        "from": "",
+        "to": "509799023"
+      },
+      {
+        "3. Type": "Edit",
+        "path": "dateofbirth",
+        "from": {
+          "$date": "2003-05-30T00:00:00.000Z"
+        },
+        "to": "Fri May 30 2003 00:00:00 GMT+0000 (Coordinated Universal Time)"
+      },
+      {
+        "4. Type": "Delete",
+        "path": "bsn",
+        "from": "680240895"
+      }
+    ],
+    "Total Update Count": 4
+  },
+  {
+    "Email": "michalow80@gmail.com",
+    "Document 1 ID": "6826ec8d24ed32eb21e21a16 - auth0|6826ec9286412081b3c7c40b",
+    "Document 2 ID": "6826ec8eee659ee893332ef0 - undefined",
+    "Differences": [
+      {
+        "1. Type": "Edit",
+        "path": "initials",
+        "from": "MM",
+        "to": "M"
+      },
+      {
+        "2. Type": "Edit",
+        "path": "dateofbirth",
+        "from": "1980-05-03T00:00:00",
+        "to": "Sat May 03 1980 00:00:00 GMT+0000 (Coordinated Universal Time)"
+      }
+    ],
+    "Total Update Count": 2
+  }
+]

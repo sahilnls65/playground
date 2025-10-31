@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>NowOnline Sample</title>
+    <!-- Import Urbanist font from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+        font-family: "Urbanist", Arial, Helvetica, sans-serif;
+        background: #08182c;
+      }
+      .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 0;
+        pointer-events: none;
+        background: linear-gradient(
+            0deg,
+            var(--Maastricht-Blue, #08182c),
+            var(--Maastricht-Blue, #08182c)
+          ),
+          radial-gradient(50% 50% at 50% 50%, rgba(8, 24, 44, 0) 74.04%, #08182c 100%);
+      }
+      .background img {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        opacity: 0.35;
+        display: block;
+      }
+      .content {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+        color: #fff;
+        gap: 6rem;
+        width: 100%;
+      }
+      .content > div {
+        display: flex;
+        align-items: center;
+      }
+      .gola {
+        justify-content: flex-end;
+        width: 40%;
+        min-width: 320px;
+      }
+      .gola img {
+        max-width: 90%;
+        height: auto;
+      }
+      .main-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 50%;
+        min-width: 320px;
+        max-width: 520px;
+        background: rgba(8, 24, 44, 0.7);
+        border-radius: 2rem;
+        padding: 3rem 2.5rem 2.5rem 2.5rem;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+      }
+      .main-info h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+        letter-spacing: -1px;
+        width: 100%;
+      }
+      #animated-word {
+        color: #00ffd0;
+        white-space: nowrap;
+        font-weight: 900;
+      }
+      .main-info p {
+        font-size: 1.25rem;
+        max-width: 32rem;
+        color: #cfd8e3;
+        margin-bottom: 2.5rem;
+      }
+      .main-info .main-btn {
+        display: inline-block;
+        padding: 0.9rem 2.2rem;
+        font-size: 1.15rem;
+        font-weight: 700;
+        border-radius: 2.5rem;
+        background: linear-gradient(90deg, #00ffd0 0%, #00bfff 100%);
+        color: #08182c;
+        text-decoration: none;
+        box-shadow: 0 4px 16px rgba(0, 255, 208, 0.12);
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 0.5px;
+      }
+      .main-info .main-btn:hover {
+        background: linear-gradient(90deg, #00bfff 0%, #00ffd0 100%);
+        color: #00111a;
+        box-shadow: 0 6px 24px rgba(0, 255, 208, 0.18);
+      }
+      .linux-server {
+        margin-top: 5px;
+        color: #00ffd0;
+      }
+      @media (max-width: 900px) {
+        .content {
+          flex-direction: column;
+          gap: 2.5rem;
+          justify-content: flex-start;
+          padding-top: 3rem;
+          height: auto;
+        }
+        .gola,
+        .main-info {
+          width: 90%;
+          min-width: unset;
+          max-width: 98vw;
+        }
+      }
+      @media (max-width: 600px) {
+        .main-info {
+          padding: 2rem 1rem 1.5rem 1rem;
+        }
+        .main-info h1 {
+          font-size: 2.1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <img src="nowonline-background.jpg" alt="Background" />
+    </div>
+    <div style="position: absolute; margin: 30px 0 0 30px">
+      <img src="logo-nowonline.png" alt="LogoNowOnline" />
+      <h2 class="linux-server">Linux Server</h2>
+    </div>
+    <div class="content">
+      <div class="gola">
+        <img src="gola.png" alt="gola.png" />
+      </div>
+      <div class="main-info">
+        <h1>
+          Create together,<br />
+          <span id="animated-word"></span> the world.
+        </h1>
+        <p>
+          Discover Nowonline Server — where modern design meets seamless collaboration.<br />
+          Experience a beautifully styled platform crafted for creativity, connection, and positive
+          impact.
+        </p>
+        <a class="main-btn" href="https://nowonline.com" target="_blank" rel="noopener"
+          >Go to Main Website</a
+        >
+      </div>
+    </div>
+    <script>
+      const words = ["inspire", "protect", "engage", "facilitate", "connect"];
+      const el = document.getElementById("animated-word");
+      let wordIndex = 0;
+      let charIndex = 0;
+      let typing = true;
+
+      function typeWord() {
+        if (typing) {
+          if (charIndex < words[wordIndex].length) {
+            el.textContent += words[wordIndex][charIndex];
+            charIndex++;
+            setTimeout(typeWord, 80);
+          } else {
+            typing = false;
+            setTimeout(typeWord, 1200);
+          }
+        } else {
+          if (charIndex > 0) {
+            el.textContent = words[wordIndex].slice(0, charIndex - 1);
+            charIndex--;
+            setTimeout(typeWord, 40);
+          } else {
+            typing = true;
+            wordIndex = (wordIndex + 1) % words.length;
+            setTimeout(typeWord, 300);
+          }
+        }
+      }
+      typeWord();
+    </script>
+  </body>
+</html>
