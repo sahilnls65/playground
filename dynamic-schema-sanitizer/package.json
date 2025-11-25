@@ -1,0 +1,51 @@
+{
+  "name": "dynamic-schema-sanitizer",
+  "version": "1.0.0",
+  "description": "A fast runtime schema-driven sanitizer & validator for dynamic schemas — alternative to Mongoose validation for multi-tenant apps.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean",
+    "test": "echo \"No tests specified\" && exit 0",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahiltrambadiya707/dynamic-schema-sanitizer.git"
+  },
+  "keywords": [
+    "sanitizer",
+    "validation",
+    "schema",
+    "dynamic-schema",
+    "runtime-validation",
+    "mongoose-alternative",
+    "multi-tenant"
+  ],
+  "author": "Sahil Trambadiya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sahiltrambadiya707/dynamic-schema-sanitizer/issues"
+  },
+  "homepage": "https://github.com/sahiltrambadiya707/dynamic-schema-sanitizer#readme",
+  "dependencies": {
+    "mongoose": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@types/mongoose": "^5.11.97"
+  }
+}
