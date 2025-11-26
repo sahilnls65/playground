@@ -23,6 +23,21 @@ export interface FieldSchema {
   [key: string]: any;
 }
 
+const RESERVED_SCHEMA_KEYS = new Set([
+  "type",
+  "required",
+  "default",
+  "enum",
+  "match",
+  "min",
+  "max",
+  "trim",
+  "lowercase",
+  "uppercase",
+  "ref",
+  "validate",
+]);
+
 /** Options for sanitizer */
 export interface SanitizeOptions {
   unknownFields?: "strip" | "keep" | "error";
@@ -34,6 +49,7 @@ export interface SanitizeOptions {
   removeEmptyArrays?: boolean;
   language?: string;
   messages?: Record<string, Record<string, any>>;
+  strictNested?: boolean;
 }
 
 /** Result object returned by the sanitizer */
@@ -60,6 +76,7 @@ export function sanitizePayloadWithFields(
     removeEmptyArrays: false,
     language: "en",
     messages: {},
+    strictNested: false,
     ...options,
   };
 
@@ -167,6 +184,33 @@ export function sanitizePayloadWithFields(
     );
   }
 
+  /**
+   * Creates a placeholder value mirroring the schema shape so that nested
+   * validations can run even when a parent field is absent.
+   */
+  function buildSchemaSkeleton(schema: any): any {
+    if (isArraySchema(schema)) {
+      const itemSchema = schema[0];
+      if (itemSchema === undefined) return [];
+      return [buildSchemaSkeleton(itemSchema)];
+    }
+
+    if (isPrimitiveSchema(schema)) {
+      return undefined;
+    }
+
+    if (isObjectSchema(schema)) {
+      const obj: AnyObject = {};
+      for (const key of Object.keys(schema)) {
+        if (RESERVED_SCHEMA_KEYS.has(key)) continue;
+        obj[key] = buildSchemaSkeleton(schema[key]);
+      }
+      return obj;
+    }
+
+    return undefined;
+  }
+
   function processValue(value: any, schema: any, path: string): any {
     if (isArraySchema(schema)) return processArray(value, schema[0], path);
     if (isPrimitiveSchema(schema)) return processPrimitive(value, schema, path);
@@ -198,8 +242,14 @@ export function sanitizePayloadWithFields(
               typeof fieldSchema.default === "function"
                 ? fieldSchema.default()
                 : fieldSchema.default;
-          } else if (opts.validate && fieldSchema.required) {
-            pushError(fieldPath, ERROR_CODES.FIELD_REQUIRED);
+          } else {
+            if (opts.validate && fieldSchema.required) {
+              pushError(fieldPath, ERROR_CODES.FIELD_REQUIRED);
+            }
+            if (opts.strictNested && (isObjectSchema(fieldSchema) || isArraySchema(fieldSchema))) {
+              const placeholder = buildSchemaSkeleton(fieldSchema);
+              processValue(placeholder, fieldSchema, fieldPath);
+            }
           }
           continue;
         }
@@ -242,6 +292,12 @@ export function sanitizePayloadWithFields(
     pushPartial(out);
 
     try {
+      if (input.length === 0 && opts.strictNested) {
+        const placeholder = buildSchemaSkeleton(itemSchema);
+        const pseudoPath = `${path}[0]`;
+        processValue(placeholder, itemSchema, pseudoPath);
+      }
+
       for (let i = 0; i < input.length; i++) {
         const idxPath = `${path}[${i}]`;
 
